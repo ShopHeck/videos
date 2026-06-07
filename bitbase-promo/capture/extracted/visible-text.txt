@@ -1,0 +1,208 @@
+[span] Buy Crypto
+[span] Quick Buy
+[span] Buy cryptos in just a few steps
+[span] Markets
+[span] Trade
+[span] Spot
+[span] Trade crypto assets with ease, worry-free trading
+[span] Futures
+[span] USDT-M Futures
+[span] Perpetual futures settled in USDT
+[span] USDC-M Futures
+[span] Perpetual futures settled in USDC
+[span] Futures overview
+[span] A one-stop futures trading platform
+[span] TradFi
+[span] Explore TradFi
+[span] Discover trending markets and core assets
+[span] TradFi Futures
+[span] Efficiently capture price movements in popular instruments
+[span] TradFi Spot
+[span] Trade on-chain TradFi token assets with ease
+[span] Finance
+[span] Simple Earn
+[span] Deposit to earn. Simple and secure
+[span] Activity
+[span] Rewards Hub
+[span] Complete tasks, Earn rewards.
+[span] VIP Center
+[span] Designed for Professional Traders
+[span] Referral Commission
+[span] Invite Friends, Share High Rewards
+[span] Partner Program
+[span] Unlock $10M in Bitbase Incentives
+[a] Log in
+[a] Sign up
+[div] Scan to Download the APP
+[button] More options
+[span] Language
+[span] English
+[span] Polski
+[span] Русский
+[span] 简体中文
+[span] 繁體中文
+[span] Exchange Rate
+[span] USD
+[span] KRW
+[span] INR
+[span] IDR
+[span] CNY
+[div] 3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+[span] Your Base. Your Trust
+[button] Sign up
+[button] Sign up
+[span] Bitbase System Maintenance Completed（May 9, 2026）
+[span] Resumption of Deposit and Withdrawal Functions for SUI Chain Tokens
+[span] SUI Deposit and Withdrawal Suspension Notice
+[span] Bitbase System Maintenance Completed (May 26, 2026)
+[span] Bitbase System Upgrade Notice (May 26, 2026)
+[span] [ Official Announcement] Explanation of High-Frequency Trading Management Rules
+[span] Bitbase System Maintenance Completed (May 20, 2026)
+[span] Bitbase System Maintenance Notice (May 19, 2026)
+[span] Bitbase System Maintenance Completed (May 14, 2026)
+[span] Bitbase System Maintenance Notice (May 14, 2026)
+[span] Bitbase System Maintenance Completed（May 9, 2026）
+[span] Resumption of Deposit and Withdrawal Functions for SUI Chain Tokens
+[span] More
+[h2] Popular Pairs
+[div] Spot
+[div] Futures
+[div] TradFi
+[div] Volume Ranking
+[span] BTC
+[span] USDT
+[div] $61,396.01
+[span] +1.28%
+[button] Trade
+[span] BNB
+[span] USDT
+[div] $588.3
+[span] +2.40%
+[button] Trade
+[span] SOL
+[span] USDT
+[div] $63.91
+[span] +3.46%
+[button] Trade
+[span] ETH
+[span] USDT
+[div] $1,608.37
+[span] +3.33%
+[button] Trade
+[span] DOT
+[span] USDT
+[div] $0.945
+[span] +1.17%
+[button] Trade
+[span] HBAR
+[span] USDT
+[div] $0.08012
+[span] +1.84%
+[button] Trade
+[span] LINK
+[span] USDT
+[div] $7.583
+[span] +3.69%
+[button] Trade
+[span] XLM
+[span] USDT
+[div] $0.2019
+[span] -1.06%
+[button] Trade
+[span] Futures Gainers
+[span] Spot Gainers
+[span] ZEC
+[span] USDT
+[div] $410.54
+[div] +15.50%
+[span] ZEC
+[span] USDC
+[div] $410.50
+[div] +15.45%
+[span] WLD
+[span] USDT
+[div] $0.4628
+[div] +10.93%
+[span] WLD
+[span] USDC
+[div] $0.4626
+[div] +10.80%
+[div] New Listings
+[span] AAVE
+[span] USDC
+[div] $61.31
+[div] +1.54%
+[span] PEPE
+[span] USDC
+[div] $0.00000270
+[div] +1.88%
+[span] NEAR
+[span] USDC
+[div] $1.981
+[div] +6.10%
+[span] More
+[h2] Your Assets,Our Responsibility
+[p] Every trade reflects our uncompromising commitment to security.
+[h3] Transaction Security
+[span] All orders are validated for consistency and processed in strict time priority. Built-in circuit breakers and rollback mechanisms provide comprehensive protection against abnormal conditions.
+[h3] Fund Security
+[span] Your funds are protected by advanced security measures, including hot and cold wallet separation, MPC-based multi-signature technology, multi-layer approval workflows, tiered access controls, and real-time monitoring and interception of suspicious withdrawals.
+[h3] Fair and Transparent
+[span] Pricing is based on multiple independent indices. Funding rate calculations are fully transparent and auditable, with real-time monitoring and disclosure of potential market manipulation.
+[h2] Built on Stability, Proven by Data
+[p] Every metric reflects our commitment to stability and performance.
+[span] 99.99%
+[span] System Uptime
+[span] < 10ms
+[span] Order Matching Speed
+[span] 367+
+[span] Supported Trading Pairs
+[p] *Statistics updated in real time. Uptime calculated since launch.
+[h2] Trade with Confidence
+[p] Scan to Download App
+[p] iOS & Android
+[span] More Download Options
+[span] App Store
+[span] Google Play
+[span] Android APK
+[span] FAQs
+[span] What is a cryptocurrency exchange?
+[div] A cryptocurrency exchange is an online platform that enables users to buy and sell digital assets. Users can trade a wide range of cryptocurrencies, including Bitcoin (BTC), Ethereum (ETH), and Tether (USDT).
+[strong] Bitbase
+[div] is a leading global cryptocurrency exchange where users can easily trade
+[strong] BTC, ETH, USDT
+[div] , and other digital assets. Beyond secure and efficient trading, the platform also offers
+[strong] a full suite of services—including Copy trading and Earn products
+[div] —building a comprehensive, one-stop crypto asset ecosystem for users.
+[span] What products does Bitbase provide?
+[div] Bitbase offers a full suite of trading products designed to meet the needs of every type of trader.
+[div] Spot Trading — Buy and sell hundreds of cryptocurrencies at real-time market prices.
+[div] Futures Trading — Leveraged perpetual and delivery contracts with advanced risk management.
+[div] Financial Products — Grow your idle assets through flexible and fixed-term earning options.
+[div] Web & Mobile App — Seamless trading experience across all devices, available on iOS and Android.
+[div] Whether you're just starting out or managing a sophisticated portfolio, Bitbase has the tools to support your journey.
+[span] How to track cryptocurrency prices?
+[div] View real-time prices, trading volume, price changes, and market capitalization on
+[a] Bitbase Markets
+[div] . You can also access historical
+[span] candlestick charts
+[div] , 24-hour volume, and live data for major cryptocurrencies such as BTC and ETH.
+[span] How to trade cryptocurrency on Bitbase?
+[div] Once your account is funded, go to the trading page, select a trading pair, choose your order type (market or limit), enter the amount, and confirm. Whether you're spot trading or exploring futures, the interface is designed for both beginners and experienced traders.
+[span] Why choose Bitbase?
+[div] Bitbase wasn’t built to follow trends, but to build for the long term. Security is non-negotiable. It’s built into everything we do. Every asset on the platform is protected with the same level of care as our own. Stability is fundamental — across our systems, our rules, and our operations. We’re committed to being here for the long run, focused on earning and maintaining your trust over time. We operate with transparency: clear fees, open rules, and accountable communication. Bitbase is a platform designed to grow with you — and stand with you.
+[button] Sign up
+[div] Community
+[div] Scan to Download the APP
+[a] About Bitbase
+[a] Announcement
+[a] Partner Program
+[a] Referral Commission
+[a] Crypto Markets
+[a] Spot Trading
+[a] Derivatives Trading
+[a] Buy Crypto
+[a] Help Center
+[a] APP Download
+[a] Crypto Market
+[div] © 2026 Bitbase. All rights reserved.

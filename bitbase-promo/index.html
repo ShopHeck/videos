@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bitbase — New User Bonus Promo</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  </head>
+  <body>
+    <div
+      data-composition-id="root"
+      data-start="0"
+      data-duration="12"
+      data-width="1080"
+      data-height="1920"
+    >
+      <!-- Beat 1: $33,500 USDT Hook (0-2.4s) -->
+      <div
+        id="beat-1"
+        data-composition-id="beat-1"
+        data-composition-src="compositions/beat-1.html"
+        data-start="0"
+        data-duration="2.4"
+        data-track-index="1"
+      ></div>
+
+      <!-- Beat 2: Bitbase Brand (2.4-4.8s) -->
+      <div
+        id="beat-2"
+        data-composition-id="beat-2"
+        data-composition-src="compositions/beat-2.html"
+        data-start="2.4"
+        data-duration="2.4"
+        data-track-index="1"
+      ></div>
+
+      <!-- Beat 3: Stats (4.8-7.2s) -->
+      <div
+        id="beat-3"
+        data-composition-id="beat-3"
+        data-composition-src="compositions/beat-3.html"
+        data-start="4.8"
+        data-duration="2.4"
+        data-track-index="1"
+      ></div>
+
+      <!-- Beat 4: Products (7.2-9.6s) -->
+      <div
+        id="beat-4"
+        data-composition-id="beat-4"
+        data-composition-src="compositions/beat-4.html"
+        data-start="7.2"
+        data-duration="2.4"
+        data-track-index="1"
+      ></div>
+
+      <!-- Beat 5: CTA + Referral (9.6-12s) -->
+      <div
+        id="beat-5"
+        data-composition-id="beat-5"
+        data-composition-src="compositions/beat-5.html"
+        data-start="9.6"
+        data-duration="2.4"
+        data-track-index="1"
+      ></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines['root'] = tl;
+    </script>
+
+    <script>
+      window.HyperShader = window.HyperShader || {};
+      window.HyperShader.transitions = [
+        {
+          from: 'beat-1',
+          to: 'beat-2',
+          shader: 'glitch',
+          duration: 0.5,
+          at: 2.15
+        },
+        {
+          from: 'beat-2',
+          to: 'beat-3',
+          shader: 'whip-pan',
+          duration: 0.5,
+          at: 4.55
+        },
+        {
+          from: 'beat-3',
+          to: 'beat-4',
+          shader: 'glitch',
+          duration: 0.5,
+          at: 6.95
+        },
+        {
+          from: 'beat-4',
+          to: 'beat-5',
+          shader: 'whip-pan',
+          duration: 0.5,
+          at: 9.35
+        }
+      ];
+    </script>
+  </body>
+</html>
