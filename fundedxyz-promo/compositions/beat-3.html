@@ -1,0 +1,138 @@
+<template id="beat-3-template">
+  <div data-composition-id="beat-3" data-width="1080" data-height="1920">
+    <style>
+      [data-composition-id="beat-3"] {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        position: relative;
+        background: #0a0a0f;
+        font-family: 'Inter', sans-serif;
+      }
+      .b3-glow {
+        position: absolute;
+        width: 1000px;
+        height: 1000px;
+        border-radius: 50%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, rgba(108, 92, 231, 0.15) 0%, transparent 70%);
+        filter: blur(60px);
+      }
+      .b3-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 200px 60px;
+        gap: 60px;
+        box-sizing: border-box;
+      }
+      .b3-pill {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 24px 48px;
+        border-radius: 80px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(108, 92, 231, 0.3);
+      }
+      .b3-pill-icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #00d4aa;
+        box-shadow: 0 0 20px rgba(0, 212, 170, 0.5);
+      }
+      .b3-pill-text {
+        font-size: 42px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: -0.5px;
+      }
+      .b3-price {
+        font-size: 220px;
+        font-weight: 900;
+        color: #6c5ce7;
+        letter-spacing: -8px;
+        line-height: 1;
+        text-shadow: 0 0 80px rgba(108, 92, 231, 0.4);
+      }
+      .b3-subtitle {
+        font-size: 38px;
+        font-weight: 500;
+        color: #a0a0b0;
+        text-align: center;
+        line-height: 1.4;
+      }
+      .b3-badges {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .b3-badge {
+        padding: 16px 32px;
+        border-radius: 12px;
+        background: rgba(0, 212, 170, 0.08);
+        border: 1px solid rgba(0, 212, 170, 0.2);
+        font-size: 28px;
+        font-weight: 600;
+        color: #00d4aa;
+      }
+    </style>
+
+    <div class="b3-glow"></div>
+    <div class="b3-content">
+      <div class="b3-pill">
+        <div class="b3-pill-icon"></div>
+        <span class="b3-pill-text">Single Phase</span>
+      </div>
+      <div class="b3-price">$20</div>
+      <div class="b3-subtitle">Cheapest entry in crypto prop trading</div>
+      <div class="b3-badges">
+        <div class="b3-badge b3-badge-1">No Time Limits</div>
+        <div class="b3-badge b3-badge-2">USDT Payouts</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.fromTo('.b3-pill',
+        { y: -60, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.35, ease: 'power3.out' }, 0.1);
+
+      tl.fromTo('.b3-price',
+        { scale: 3, opacity: 0, rotation: -5 },
+        { scale: 1, opacity: 1, rotation: 0, duration: 0.45, ease: 'expo.out' }, 0.25);
+
+      tl.fromTo('.b3-subtitle',
+        { y: 40, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out' }, 0.55);
+
+      tl.fromTo('.b3-badge-1',
+        { x: -40, opacity: 0, scale: 0.9 },
+        { x: 0, opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.7)' }, 0.75);
+
+      tl.fromTo('.b3-badge-2',
+        { x: 40, opacity: 0, scale: 0.9 },
+        { x: 0, opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.7)' }, 0.9);
+
+      tl.fromTo('.b3-glow',
+        { scale: 0.8, opacity: 0 },
+        { scale: 1.15, opacity: 1, duration: 1.5, ease: 'sine.inOut' }, 0);
+
+      tl.fromTo('.b3-content',
+        { scale: 0.97 },
+        { scale: 1.03, duration: 2.4, ease: 'none' }, 0);
+
+      window.__timelines['beat-3'] = tl;
+    </script>
+  </div>
+</template>

@@ -1,0 +1,130 @@
+<template id="beat-1-template">
+  <div data-composition-id="beat-1" data-width="1080" data-height="1920">
+    <style>
+      [data-composition-id="beat-1"] {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        position: relative;
+        background: #0a0a0f;
+        font-family: 'Inter', sans-serif;
+      }
+      .b1-glow {
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, rgba(108, 92, 231, 0.25) 0%, transparent 70%);
+        filter: blur(60px);
+      }
+      .b1-glow-green {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, rgba(0, 212, 170, 0.15) 0%, transparent 70%);
+        filter: blur(80px);
+      }
+      .b1-grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(108, 92, 231, 0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(108, 92, 231, 0.04) 1px, transparent 1px);
+        background-size: 60px 60px;
+      }
+      .b1-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        padding: 0 60px;
+        box-sizing: border-box;
+      }
+      .b1-trade {
+        font-size: 140px;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1.0;
+        letter-spacing: -3px;
+      }
+      .b1-crypto {
+        font-size: 140px;
+        font-weight: 900;
+        color: #00d4aa;
+        line-height: 1.0;
+        letter-spacing: -3px;
+      }
+      .b1-flash {
+        position: absolute;
+        inset: 0;
+        background: #00d4aa;
+        opacity: 0;
+      }
+      .b1-scanlines {
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 3px,
+          rgba(0, 212, 170, 0.03) 3px,
+          rgba(0, 212, 170, 0.03) 4px
+        );
+        pointer-events: none;
+      }
+    </style>
+
+    <div class="b1-glow"></div>
+    <div class="b1-glow-green"></div>
+    <div class="b1-grid"></div>
+    <div class="b1-scanlines"></div>
+    <div class="b1-flash"></div>
+    <div class="b1-content">
+      <div class="b1-trade">Trade</div>
+      <div class="b1-crypto">Crypto.</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.fromTo('.b1-flash', { opacity: 0.8 }, { opacity: 0, duration: 0.3, ease: 'power2.out' }, 0.05);
+
+      tl.fromTo('.b1-trade',
+        { x: -200, opacity: 0, scale: 1.3 },
+        { x: 0, opacity: 1, scale: 1, duration: 0.4, ease: 'back.out(1.4)' }, 0.1);
+
+      tl.fromTo('.b1-crypto',
+        { y: 120, opacity: 0, scale: 0.8 },
+        { y: 0, opacity: 1, scale: 1, duration: 0.45, ease: 'expo.out' }, 0.3);
+
+      tl.fromTo('.b1-glow',
+        { scale: 0.6, opacity: 0 },
+        { scale: 1.2, opacity: 1, duration: 1.2, ease: 'sine.inOut' }, 0);
+
+      tl.fromTo('.b1-glow-green',
+        { scale: 0.8, opacity: 0 },
+        { scale: 1.1, opacity: 1, duration: 1.5, ease: 'sine.inOut' }, 0.2);
+
+      tl.fromTo('.b1-grid',
+        { opacity: 0 },
+        { opacity: 1, duration: 0.6, ease: 'power1.in' }, 0);
+
+      tl.fromTo('.b1-content',
+        { scale: 1.0 },
+        { scale: 1.06, duration: 2.4, ease: 'none' }, 0);
+
+      window.__timelines['beat-1'] = tl;
+    </script>
+  </div>
+</template>
