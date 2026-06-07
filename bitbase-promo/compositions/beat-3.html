@@ -1,0 +1,138 @@
+<template id="beat-3-template">
+  <div data-composition-id="beat-3" data-width="1080" data-height="1920">
+    <style>
+      [data-composition-id="beat-3"] {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        position: relative;
+        background: #070808;
+        font-family: 'Inter', sans-serif;
+      }
+      .b3-glow {
+        position: absolute;
+        width: 900px;
+        height: 900px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, rgba(246, 143, 21, 0.12) 0%, transparent 70%);
+        filter: blur(70px);
+      }
+      .b3-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 200px 60px;
+        gap: 70px;
+        box-sizing: border-box;
+      }
+      .b3-stat {
+        text-align: center;
+      }
+      .b3-stat-number {
+        font-size: 130px;
+        font-weight: 900;
+        color: #f68f15;
+        letter-spacing: -4px;
+        line-height: 1;
+        text-shadow: 0 0 50px rgba(246, 143, 21, 0.3);
+        font-variant-numeric: tabular-nums;
+      }
+      .b3-stat-label {
+        font-size: 32px;
+        font-weight: 500;
+        color: #a0a3a7;
+        margin-top: 8px;
+        letter-spacing: 1px;
+      }
+      .b3-stat-2 .b3-stat-number {
+        color: #fafafa;
+        font-size: 120px;
+      }
+      .b3-stat-3 .b3-stat-number {
+        color: #fafafa;
+        font-size: 120px;
+      }
+      .b3-divider {
+        width: 80px;
+        height: 2px;
+        background: rgba(246, 143, 21, 0.3);
+      }
+    </style>
+
+    <div class="b3-glow"></div>
+    <div class="b3-content">
+      <div class="b3-stat b3-stat-1">
+        <div class="b3-stat-number">99.99%</div>
+        <div class="b3-stat-label">System Uptime</div>
+      </div>
+      <div class="b3-divider"></div>
+      <div class="b3-stat b3-stat-2">
+        <div class="b3-stat-number">&lt;10ms</div>
+        <div class="b3-stat-label">Order Matching</div>
+      </div>
+      <div class="b3-divider"></div>
+      <div class="b3-stat b3-stat-3">
+        <div class="b3-stat-number">367+</div>
+        <div class="b3-stat-label">Trading Pairs</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // 99.99% slams from left
+      tl.fromTo('.b3-stat-1 .b3-stat-number',
+        { x: -80, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.4, ease: 'expo.out' }, 0.1);
+      tl.fromTo('.b3-stat-1 .b3-stat-label',
+        { y: 15, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.3, ease: 'power2.out' }, 0.3);
+
+      // First divider
+      tl.fromTo('.b3-content > .b3-divider:nth-child(2)',
+        { scaleX: 0 },
+        { scaleX: 1, duration: 0.25, ease: 'power2.out' }, 0.4);
+
+      // <10ms from right
+      tl.fromTo('.b3-stat-2 .b3-stat-number',
+        { x: 80, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.4, ease: 'expo.out' }, 0.45);
+      tl.fromTo('.b3-stat-2 .b3-stat-label',
+        { y: 15, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.3, ease: 'power2.out' }, 0.65);
+
+      // Second divider
+      tl.fromTo('.b3-content > .b3-divider:nth-child(4)',
+        { scaleX: 0 },
+        { scaleX: 1, duration: 0.25, ease: 'power2.out' }, 0.75);
+
+      // 367+ punches in
+      tl.fromTo('.b3-stat-3 .b3-stat-number',
+        { scale: 0.5, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.4, ease: 'back.out(1.5)' }, 0.8);
+      tl.fromTo('.b3-stat-3 .b3-stat-label',
+        { y: 15, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.3, ease: 'power2.out' }, 1.0);
+
+      // Glow
+      tl.fromTo('.b3-glow',
+        { scale: 0.7, opacity: 0 },
+        { scale: 1.1, opacity: 1, duration: 1.5, ease: 'sine.out' }, 0);
+
+      // Slow zoom
+      tl.fromTo('.b3-content',
+        { scale: 0.98 },
+        { scale: 1.02, duration: 2.4, ease: 'none' }, 0);
+
+      window.__timelines['beat-3'] = tl;
+    </script>
+  </div>
+</template>

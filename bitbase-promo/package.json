@@ -1,0 +1,9 @@
+{
+  "name": "bitbase-promo",
+  "private": true,
+  "scripts": {
+    "dev": "npx hyperframes preview",
+    "check": "npx hyperframes lint && npx hyperframes validate",
+    "render": "npx hyperframes render"
+  }
+}

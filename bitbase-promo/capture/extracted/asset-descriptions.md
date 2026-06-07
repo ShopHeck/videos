@@ -1,0 +1,54 @@
+# Asset Descriptions
+
+One line per file. Read this instead of opening every image individually.
+
+- app-bg-v2.webp — 18KB, app bg v2
+- app-screen-v4.webp — 125KB, app screen v4
+- banner.webp — 215KB, banner
+- earth-v6.webp — 153KB, earth v6
+- favicon.png — 1KB, favicon
+- hero-1.jpg — 143KB, hero 1
+- hero-2.jpg — 121KB, hero 2
+- hero-3.jpg — 148KB, hero 3
+- hero-4.jpg — 125KB, hero 4
+- og-image.png — 640KB, og image
+- security-v5.webp — 260KB, security v5
+- shield-v2.webp — 54KB, shield v2
+- trade-with-confidence.webp — 85KB, trade with confidence
+- your-assetsour-responsibility.webp — 63KB, your assetsour responsibility
+- svgs/mb-15.svg — icon: mb 15
+- svgs/size-6-2.svg — logo: size-6
+- svgs/size-6.svg — logo: size-6
+- svgs/ss-icon-10.svg — logo: ss-icon
+- svgs/ss-icon-11.svg — logo: ss-icon
+- svgs/ss-icon-12.svg — logo: ss-icon
+- svgs/ss-icon-13.svg — logo: ss-icon
+- svgs/ss-icon-14.svg — logo: ss-icon
+- svgs/ss-icon-15.svg — logo: ss-icon
+- svgs/ss-icon-16.svg — logo: ss-icon
+- svgs/ss-icon-17.svg — logo: ss-icon
+- svgs/ss-icon-18.svg — logo: ss-icon
+- svgs/ss-icon-19.svg — logo: ss-icon
+- svgs/ss-icon-2.svg — logo: ss-icon
+- svgs/ss-icon-20.svg — logo: ss-icon
+- svgs/ss-icon-21.svg — logo: ss-icon
+- svgs/ss-icon-22.svg — logo: ss-icon
+- svgs/ss-icon-23.svg — logo: ss-icon
+- svgs/ss-icon-24.svg — logo: ss-icon
+- svgs/ss-icon-25.svg — logo: ss-icon
+- svgs/ss-icon-26.svg — logo: ss-icon
+- svgs/ss-icon-27.svg — logo: ss-icon
+- svgs/ss-icon-3.svg — logo: ss-icon
+- svgs/ss-icon-4.svg — logo: ss-icon
+- svgs/ss-icon-5.svg — logo: ss-icon
+- svgs/ss-icon-6.svg — logo: ss-icon
+- svgs/ss-icon-7.svg — logo: ss-icon
+- svgs/ss-icon-8.svg — logo: ss-icon
+- svgs/ss-icon-9.svg — logo: ss-icon
+- svgs/ss-icon.svg — logo: ss-icon
+- fonts/HarmonyOS_Sans-400.woff — font file
+- fonts/HarmonyOS_Sans-400.woff2 — font file
+- fonts/HarmonyOS_Sans-500.woff — font file
+- fonts/HarmonyOS_Sans-500.woff2 — font file
+- fonts/HarmonyOS_Sans-700.woff — font file
+- fonts/HarmonyOS_Sans-700.woff2 — font file

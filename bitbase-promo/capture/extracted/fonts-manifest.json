@@ -1,0 +1,95 @@
+{
+  "files": [
+    {
+      "file": "HarmonyOS_Sans-400.woff",
+      "family": "HarmonyOS Sans",
+      "rawFamily": "HarmonyOS Sans",
+      "subfamily": "Regular",
+      "postscript": "HarmonyOS_Sans",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "HarmonyOS_Sans-400.woff2",
+      "family": "HarmonyOS Sans",
+      "rawFamily": "HarmonyOS Sans",
+      "subfamily": "Regular",
+      "postscript": "HarmonyOS_Sans",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "HarmonyOS_Sans-500.woff",
+      "family": "HarmonyOS Sans",
+      "rawFamily": "HarmonyOS Sans Medium",
+      "subfamily": "Regular",
+      "postscript": "HarmonyOS_Sans_Medium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "HarmonyOS_Sans-500.woff2",
+      "family": "HarmonyOS Sans",
+      "rawFamily": "HarmonyOS Sans Medium",
+      "subfamily": "Regular",
+      "postscript": "HarmonyOS_Sans_Medium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "HarmonyOS_Sans-700.woff",
+      "family": "HarmonyOS Sans",
+      "rawFamily": "HarmonyOS Sans",
+      "subfamily": "Bold",
+      "postscript": "HarmonyOS_Sans_Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "HarmonyOS_Sans-700.woff2",
+      "family": "HarmonyOS Sans",
+      "rawFamily": "HarmonyOS Sans",
+      "subfamily": "Bold",
+      "postscript": "HarmonyOS_Sans_Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    }
+  ],
+  "families": [
+    {
+      "family": "HarmonyOS Sans",
+      "weights": [
+        400,
+        500,
+        700
+      ],
+      "variable": false,
+      "fileCount": 6,
+      "files": [
+        "HarmonyOS_Sans-400.woff",
+        "HarmonyOS_Sans-400.woff2",
+        "HarmonyOS_Sans-500.woff",
+        "HarmonyOS_Sans-500.woff2",
+        "HarmonyOS_Sans-700.woff",
+        "HarmonyOS_Sans-700.woff2"
+      ]
+    }
+  ],
+  "unidentified": [],
+  "meta": {
+    "generatedAt": "2026-06-07T19:31:31.956Z",
+    "tool": "fontkit"
+  }
+}

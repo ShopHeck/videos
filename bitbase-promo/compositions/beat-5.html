@@ -1,0 +1,147 @@
+<template id="beat-5-template">
+  <div data-composition-id="beat-5" data-width="1080" data-height="1920">
+    <style>
+      [data-composition-id="beat-5"] {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        position: relative;
+        background: #070808;
+        font-family: 'Inter', sans-serif;
+      }
+      .b5-glow {
+        position: absolute;
+        width: 1000px;
+        height: 1000px;
+        border-radius: 50%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, rgba(246, 143, 21, 0.25) 0%, transparent 70%);
+        filter: blur(80px);
+      }
+      .b5-glow-2 {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, rgba(246, 143, 21, 0.15) 0%, transparent 70%);
+        filter: blur(50px);
+      }
+      .b5-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 200px 60px;
+        gap: 40px;
+        box-sizing: border-box;
+      }
+      .b5-signup {
+        font-size: 80px;
+        font-weight: 800;
+        color: #fafafa;
+        text-align: center;
+        letter-spacing: -2px;
+      }
+      .b5-bonus {
+        font-size: 48px;
+        font-weight: 700;
+        color: #f68f15;
+        text-align: center;
+      }
+      .b5-cta-btn {
+        padding: 32px 80px;
+        border-radius: 80px;
+        background: linear-gradient(135deg, #f68f15, #ff9f2e);
+        font-size: 40px;
+        font-weight: 700;
+        color: #070808;
+        box-shadow: 0 8px 40px rgba(246, 143, 21, 0.4);
+      }
+      .b5-link {
+        font-size: 30px;
+        font-weight: 500;
+        color: #a0a3a7;
+        text-align: center;
+        padding: 16px 32px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        font-variant-numeric: tabular-nums;
+      }
+      .b5-link-label {
+        font-size: 24px;
+        font-weight: 400;
+        color: #84888c;
+        margin-bottom: 8px;
+      }
+      .b5-ref-code {
+        color: #f68f15;
+        font-weight: 700;
+      }
+    </style>
+
+    <div class="b5-glow"></div>
+    <div class="b5-glow-2"></div>
+    <div class="b5-content">
+      <div class="b5-signup">Sign Up Now</div>
+      <div class="b5-bonus">Up to $33,500 USDT Bonus</div>
+      <div class="b5-cta-btn">Create Account</div>
+      <div class="b5-link-label">Use referral code</div>
+      <div class="b5-link">bitbase.com/register?ref=<span class="b5-ref-code">9EKIVG</span></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Sign Up Now slams in
+      tl.fromTo('.b5-signup',
+        { scale: 3, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.5, ease: 'expo.out' }, 0.1);
+
+      // Bonus line
+      tl.fromTo('.b5-bonus',
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.35, ease: 'power2.out' }, 0.4);
+
+      // CTA button pops
+      tl.fromTo('.b5-cta-btn',
+        { scale: 0, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.4, ease: 'back.out(2.5)' }, 0.6);
+
+      // Link label
+      tl.fromTo('.b5-link-label',
+        { opacity: 0 },
+        { opacity: 1, duration: 0.25, ease: 'power1.out' }, 0.85);
+
+      // Referral link
+      tl.fromTo('.b5-link',
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.3, ease: 'power2.out' }, 0.95);
+
+      // Glows
+      tl.fromTo('.b5-glow',
+        { scale: 0.5, opacity: 0 },
+        { scale: 1.2, opacity: 1, duration: 1.5, ease: 'sine.out' }, 0);
+
+      tl.fromTo('.b5-glow-2',
+        { scale: 0.6, opacity: 0 },
+        { scale: 1.0, opacity: 1, duration: 1.0, ease: 'sine.out' }, 0.3);
+
+      // CTA pulse
+      tl.fromTo('.b5-cta-btn',
+        { boxShadow: '0 8px 40px rgba(246, 143, 21, 0.4)' },
+        { boxShadow: '0 12px 60px rgba(246, 143, 21, 0.7)', duration: 0.8, ease: 'sine.inOut' }, 1.0);
+
+      window.__timelines['beat-5'] = tl;
+    </script>
+  </div>
+</template>

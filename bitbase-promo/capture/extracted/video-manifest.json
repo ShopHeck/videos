@@ -1,0 +1,24 @@
+[
+  {
+    "index": 0,
+    "url": "https://www.bitbase.com/cdn/imgs/index-web/home/security_video_mini.mp4",
+    "filename": "security_video_mini.mp4",
+    "width": 420,
+    "height": 420,
+    "heading": "Your Assets,Our Responsibility",
+    "caption": "Every trade reflects our uncompromising commitment to security.",
+    "ariaLabel": "",
+    "preview": "assets/videos/previews/video-0-preview.png"
+  },
+  {
+    "index": 1,
+    "url": "https://www.bitbase.com/cdn/imgs/index-web/home/earth_video_v2_mini.mp4",
+    "filename": "earth_video_v2_mini.mp4",
+    "width": 575,
+    "height": 525,
+    "heading": "Built on Stability, Proven by Data",
+    "caption": "Every metric reflects our commitment to stability and performance.",
+    "ariaLabel": "",
+    "preview": "assets/videos/previews/video-1-preview.png"
+  }
+]
