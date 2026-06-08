@@ -1,0 +1,229 @@
+# Asset Descriptions
+
+One line per file. Read this instead of opening every image individually.
+
+- 17113258342960144455-2048-550x.jpg — 16KB, section: "KING KILLERS APPAREL", above fold
+- 17113258342960144455-2048-750x.jpg — 25KB, section: "KING KILLERS APPAREL", above fold
+- 17113258342960144455-2048.jpg — 150KB, section: "KING KILLERS APPAREL", above fold
+- batch-group-8-1200x.jpg — 237KB, batch group 8 1200x
+- batch-group-8-1500x.jpg — 237KB, batch group 8 1500x
+- batch-group-8-300x.jpg — 46KB, batch group 8 300x
+- batch-group-8-420x.jpg — 74KB, batch group 8 420x
+- batch-group-8-560x.jpg — 110KB, batch group 8 560x
+- batch-group-8-770x.jpg — 169KB, batch group 8 770x
+- batch-group-8-940x.jpg — 220KB, batch group 8 940x
+- batchgroup8-king-killers.jpg — 17KB, batchgroup8 king killers
+- become-a-vip.png — 57KB, become a vip
+- bellacanvas-3001-t-shirt-size-chart-king.jpg — 27KB, bellacanvas 3001 t shirt size chart king
+- black-and-blue-mesh-gym-shorts-king-kill.jpg — 136KB, section: "KING KILLERS APPAREL", above fold
+- blackpalmssleevelesshoodie-flat-front-35.jpg — 14KB, section: "KING KILLERS APPAREL", above fold
+- blackpalmssleevelesshoodie-flat-front-55.jpg — 31KB, section: "KING KILLERS APPAREL", above fold
+- blackpalmssleevelesshoodie-flat-front-75.jpg — 55KB, section: "KING KILLERS APPAREL", above fold
+- blackpalmssleevelesshoodie-flat-front.jpg — 110KB, section: "KING KILLERS APPAREL", above fold
+- bloodsport-sleevelesshoodie-flat-front-1.jpg — 10KB, bloodsport sleevelesshoodie flat front 1
+- bloodsport-sleevelesshoodie-flat-front-3.jpg — 41KB, bloodsport sleevelesshoodie flat front 3
+- bloodsport-sleevelesshoodie-flat-front-5.jpg — 80KB, bloodsport sleevelesshoodie flat front 5
+- bloodsport-sleevelesshoodie-flat-front-7.jpg — 127KB, bloodsport sleevelesshoodie flat front 7
+- bloodsport-sleevelesshoodie-flat-front-9.jpg — 182KB, bloodsport sleevelesshoodie flat front 9
+- bloodsport-sleevelesshoodie-flat-front.jpg — 173KB, bloodsport sleevelesshoodie flat front
+- blue-leopard-print-swim-trunks-king-kill.jpg — 121KB, section: "KING KILLERS APPAREL", above fold
+- boxing-king-foam-trucker-hat-king-killer.jpg — 18KB, section: "KING KILLERS APPAREL", above fold
+- buff-man-lifting-weights-in-a-tank-top-f.jpg — 16KB, buff man lifting weights in a tank top f
+- camokillersleevelesshoodie-flat-front-35.jpg — 27KB, section: "KING KILLERS APPAREL", above fold
+- camokillersleevelesshoodie-flat-front-55.jpg — 53KB, section: "KING KILLERS APPAREL", above fold
+- camokillersleevelesshoodie-flat-front-75.jpg — 85KB, section: "KING KILLERS APPAREL", above fold
+- camokillersleevelesshoodie-flat-front.jpg — 130KB, section: "KING KILLERS APPAREL", above fold
+- cartoon-boom-dad-hat-king-killers-1-550x.jpg — 16KB, section: "KING KILLERS APPAREL", above fold
+- cartoon-boom-dad-hat-king-killers-1.jpg — 46KB, section: "KING KILLERS APPAREL", above fold
+- choose-violence-graphic-t-shirt-king-kil.jpg — 223KB, section: "KING KILLERS APPAREL", above fold
+- dawgfight-sleevelesshoodie-front-350x.jpg — 15KB, dawgfight sleevelesshoodie front 350x
+- dawgfight-sleevelesshoodie-front-550x.jpg — 29KB, dawgfight sleevelesshoodie front 550x
+- dawgfight-sleevelesshoodie-front-750x.jpg — 46KB, dawgfight sleevelesshoodie front 750x
+- dawgfight-sleevelesshoodie-front.jpg — 67KB, dawgfight sleevelesshoodie front
+- dominance-embroidered-snapback-hat-king-.jpg — 51KB, section: "KING KILLERS APPAREL", above fold
+- dragonsleevelesshoodie-flat-front-150x.jpg — 10KB, dragonsleevelesshoodie flat front 150x
+- dragonsleevelesshoodie-flat-front-350x.jpg — 41KB, dragonsleevelesshoodie flat front 350x
+- dragonsleevelesshoodie-flat-front-550x.jpg — 83KB, dragonsleevelesshoodie flat front 550x
+- dragonsleevelesshoodie-flat-front-750x.jpg — 133KB, dragonsleevelesshoodie flat front 750x
+- dragonsleevelesshoodie-flat-front.jpg — 177KB, dragonsleevelesshoodie flat front
+- favicon.png — 18KB, favicon
+- featured-collections.jpg — 29KB, featured collections
+- fight-me-bitch-cuffed-beanie-king-killer.jpg — 29KB, section: "KING KILLERS APPAREL", above fold
+- fight-me-bitch-foam-trucker-hat-king-kil.jpg — 73KB, section: "KING KILLERS APPAREL", above fold
+- got-hands-distressed-dad-hat-king-killer.jpg — 20KB, section: "KING KILLERS APPAREL", above fold
+- got-hands-foam-trucker-hat-king-killers-.jpg — 15KB, section: "KING KILLERS APPAREL", above fold
+- graffiti-print-mesh-shorts-king-killers-.jpg — 47KB, section: "KING KILLERS APPAREL", above fold
+- hero-18.jpg — 71KB, hero 18
+- hero-19.jpg — 108KB, hero 19
+- hero-20.jpg — 177KB, hero 20
+- hero-21.jpg — 240KB, hero 21
+- hero-22.jpg — 307KB, hero 22
+- hero-23.jpg — 307KB, hero 23
+- hero-56.jpg — 20KB, hero 56
+- hero-65.jpg — 41KB, hero 65
+- hero-66.jpg — 53KB, hero 66
+- hero-67.jpg — 28KB, hero 67
+- hero-69.jpg — 13KB, hero 69
+- hero-71.jpg — 23KB, hero 71
+- hero-73.jpg — 22KB, hero 73
+- hero-74.jpg — 32KB, hero 74
+- hero-75.jpg — 75KB, hero 75
+- hero-76.jpg — 18KB, hero 76
+- hero-81.jpg — 17KB, hero 81
+- hero-82.jpg — 11KB, hero 82
+- hero-83.jpg — 11KB, hero 83
+- hero-fight-shorts-150x.png — 27KB, hero fight shorts 150x
+- hero-fight-shorts-350x.png — 132KB, hero fight shorts 350x
+- hero-fight-shorts-550x.png — 311KB, hero fight shorts 550x
+- hero-fight-shorts-750x.png — 561KB, hero fight shorts 750x
+- hero-fight-shorts-950x.png — 876KB, hero fight shorts 950x
+- hero-fight-shorts.png — 1011KB, hero fight shorts
+- hero-first-bjj-class-150x.png — 21KB, hero first bjj class 150x
+- hero-first-bjj-class-350x.png — 97KB, hero first bjj class 350x
+- hero-first-bjj-class-550x.png — 227KB, hero first bjj class 550x
+- hero-first-bjj-class-750x.png — 404KB, hero first bjj class 750x
+- hero-first-bjj-class-950x.png — 627KB, hero first bjj class 950x
+- hero-first-bjj-class.png — 713KB, hero first bjj class
+- hero-mma-gloves.png — 767KB, hero mma gloves
+- hero-recovery-tips-150x.png — 22KB, hero recovery tips 150x
+- hero-recovery-tips-350x.png — 101KB, hero recovery tips 350x
+- hero-recovery-tips-550x.png — 237KB, hero recovery tips 550x
+- hero-recovery-tips-750x.png — 439KB, hero recovery tips 750x
+- hero-recovery-tips-950x.png — 687KB, hero recovery tips 950x
+- hero-recovery-tips.png — 769KB, hero recovery tips
+- image-103.jpg — 11KB, image 103
+- image-104.jpg — 31KB, image 104
+- image-105.jpg — 49KB, image 105
+- image-118.jpg — 12KB, image 118
+- image-119.jpg — 43KB, image 119
+- image-120.jpg — 127KB, image 120
+- image-121.jpg — 152KB, image 121
+- image-133.jpg — 173KB, image 133
+- image-138.jpg — 11KB, image 138
+- image-139.jpg — 80KB, image 139
+- image-141.jpg — 15KB, image 141
+- image-142.jpg — 94KB, image 142
+- image-144.jpg — 54KB, image 144
+- image-146.jpg — 12KB, image 146
+- image-147.jpg — 94KB, image 147
+- image-148.jpg — 193KB, image 148
+- image-149.jpg — 24KB, image 149
+- image-150.jpg — 44KB, image 150
+- image-154.jpg — 53KB, image 154
+- image-158.jpg — 51KB, image 158
+- image-159.jpg — 193KB, image 159
+- image-160.jpg — 64KB, image 160
+- image-162.jpg — 11KB, image 162
+- image-163.jpg — 28KB, image 163
+- image-164.jpg — 17KB, image 164
+- image-165.jpg — 156KB, image 165
+- image-166.jpg — 258KB, image 166
+- image-167.jpg — 39KB, image 167
+- image-168.jpg — 363KB, image 168
+- image-170.jpg — 230KB, image 170
+- image-171.jpg — 34KB, image 171
+- image-172.jpg — 74KB, image 172
+- image-173.jpg — 28KB, image 173
+- image-174.jpg — 188KB, image 174
+- image-177.jpg — 60KB, image 177
+- image-178.jpg — 161KB, image 178
+- image-179.jpg — 32KB, image 179
+- image-183.jpg — 21KB, image 183
+- image-185.jpg — 23KB, image 185
+- image-186.jpg — 55KB, image 186
+- image-187.jpg — 18KB, image 187
+- image-96.jpg — 10KB, image 96
+- image-97.jpg — 32KB, image 97
+- image-98.jpg — 83KB, image 98
+- image-99.jpg — 89KB, image 99
+- killerkats-sleevelesshoodie-front-350x.jpg — 16KB, killerkats sleevelesshoodie front 350x
+- killerkats-sleevelesshoodie-front-550x.jpg — 30KB, killerkats sleevelesshoodie front 550x
+- killerkats-sleevelesshoodie-front-750x.jpg — 46KB, killerkats sleevelesshoodie front 750x
+- killerkats-sleevelesshoodie-front.jpg — 65KB, killerkats sleevelesshoodie front
+- king-distressed-dad-hat-king-killers-1-3.jpg — 12KB, section: "KING KILLERS APPAREL", above fold
+- king-distressed-dad-hat-king-killers-1-5.jpg — 28KB, section: "KING KILLERS APPAREL", above fold
+- king-distressed-dad-hat-king-killers-1.jpg — 114KB, section: "KING KILLERS APPAREL", above fold
+- king-killers-apparel-logo-in-black.png — 19KB, king killers apparel logo in black
+- king-killers-apparel.jpg — 136KB, king killers apparel
+- king-killers.svg — 126KB, king killers
+- kingkillersapparel-1080x.jpg — 165KB, kingkillersapparel 1080x
+- kingkillersapparel-375x.jpg — 52KB, kingkillersapparel 375x
+- kingkillersapparel-540x.jpg — 80KB, kingkillersapparel 540x
+- kingkillersapparel-780x.jpg — 150KB, kingkillersapparel 780x
+- kingkillersapparel.jpg — 165KB, kingkillersapparel
+- knit-beanie-black-front-6505f97865228-55.jpg — 22KB, section: "KING KILLERS APPAREL", above fold
+- knit-beanie-black-front-6505f97865228-75.jpg — 43KB, section: "KING KILLERS APPAREL", above fold
+- knit-beanie-black-front-6505f97865228.jpg — 292KB, section: "KING KILLERS APPAREL", above fold
+- main-content-index.jpg — 57KB, main content index
+- mosburgboxingxkingkillers-1200x.jpg — 206KB, "mosburgboxingxkingkillers - King Killers", section: "FEATURED COLLECTIONS", above fold
+- mosburgboxingxkingkillers-1500x.jpg — 227KB, "mosburgboxingxkingkillers - King Killers", section: "FEATURED COLLECTIONS", above fold
+- mosburgboxingxkingkillers-420x.jpg — 47KB, "mosburgboxingxkingkillers - King Killers", section: "FEATURED COLLECTIONS", above fold
+- mosburgboxingxkingkillers-560x.jpg — 71KB, "mosburgboxingxkingkillers - King Killers", section: "FEATURED COLLECTIONS", above fold
+- mosburgboxingxkingkillers-770x.jpg — 112KB, "mosburgboxingxkingkillers - King Killers", section: "FEATURED COLLECTIONS", above fold
+- mosburgboxingxkingkillers-940x.jpg — 148KB, "mosburgboxingxkingkillers - King Killers", section: "FEATURED COLLECTIONS", above fold
+- mosburgboxingxkingkillers-king-killers.jpg — 12KB, "mosburgboxingxkingkillers - King Killers", section: "FEATURED COLLECTIONS", above fold
+- ms-item-small-one-whole.jpg — 43KB, ms item small one whole
+- muay-thai-killers-athletic-jersey-1000x.jpg — 112KB, muay thai killers athletic jersey 1000x
+- muay-thai-killers-athletic-jersey-1300x.jpg — 78KB, muay thai killers athletic jersey 1300x
+- muay-thai-killers-athletic-jersey-500x.jpg — 43KB, muay thai killers athletic jersey 500x
+- muay-thai-killers-athletic-jersey-550x.jpg — 49KB, muay thai killers athletic jersey 550x
+- muay-thai-killers-athletic-jersey-650x.jpg — 62KB, muay thai killers athletic jersey 650x
+- muay-thai-killers-athletic-jersey-750x.jpg — 75KB, muay thai killers athletic jersey 750x
+- muay-thai-killers-athletic-jersey-800x.jpg — 82KB, muay thai killers athletic jersey 800x
+- muay-thai-killers-athletic-jersey-950x.jpg — 104KB, muay thai killers athletic jersey 950x
+- muay-thai-killers-athletic-jersey-front-.jpg — 27KB, muay thai killers athletic jersey front 
+- muay-thai-killers-athletic-jersey.jpg — 78KB, muay thai killers athletic jersey
+- neon-leopard-print-swim-trunks-king-kill.jpg — 128KB, section: "KING KILLERS APPAREL", above fold
+- neon-paint-splatter-mesh-shorts-king-kil.jpg — 147KB, section: "KING KILLERS APPAREL", above fold
+- og-image.jpg — 206KB, og image
+- red-lava-swim-trunks-king-killers-1-150x.jpg — 12KB, section: "KING KILLERS APPAREL", above fold
+- red-lava-swim-trunks-king-killers-1-350x.jpg — 41KB, section: "KING KILLERS APPAREL", above fold
+- red-lava-swim-trunks-king-killers-1-550x.jpg — 76KB, section: "KING KILLERS APPAREL", above fold
+- red-lava-swim-trunks-king-killers-1.jpg — 125KB, section: "KING KILLERS APPAREL", above fold
+- redpaisleysleevelesshoodie-flat-front-12.jpg — 127KB, section: "KING KILLERS APPAREL", above fold
+- redpaisleysleevelesshoodie-flat-front-35.jpg — 38KB, section: "KING KILLERS APPAREL", above fold
+- redpaisleysleevelesshoodie-flat-front-55.jpg — 76KB, section: "KING KILLERS APPAREL", above fold
+- redpaisleysleevelesshoodie-flat-front-75.jpg — 117KB, section: "KING KILLERS APPAREL", above fold
+- redpaisleysleevelesshoodie-flat-front-95.jpg — 166KB, section: "KING KILLERS APPAREL", above fold
+- redpaisleysleevelesshoodie-flat-front.jpg — 127KB, section: "KING KILLERS APPAREL", above fold
+- sleeveless-hoodiescollection-1200x.jpg — 143KB, sleeveless hoodiescollection 1200x
+- sleeveless-hoodiescollection-1500x.jpg — 163KB, sleeveless hoodiescollection 1500x
+- sleeveless-hoodiescollection-420x.jpg — 33KB, sleeveless hoodiescollection 420x
+- sleeveless-hoodiescollection-560x.jpg — 49KB, sleeveless hoodiescollection 560x
+- sleeveless-hoodiescollection-770x.jpg — 78KB, sleeveless hoodiescollection 770x
+- sleeveless-hoodiescollection-940x.jpg — 102KB, sleeveless hoodiescollection 940x
+- sleevelesshoodie-flat-front-1200x.jpg — 56KB, sleevelesshoodie flat front 1200x
+- sleevelesshoodie-flat-front-350x.jpg — 13KB, sleevelesshoodie flat front 350x
+- sleevelesshoodie-flat-front-550x.jpg — 25KB, sleevelesshoodie flat front 550x
+- sleevelesshoodie-flat-front-750x.jpg — 39KB, sleevelesshoodie flat front 750x
+- sleevelesshoodie-flat-front-950x.jpg — 57KB, sleevelesshoodie flat front 950x
+- sleevelesshoodie-flat-front.jpg — 56KB, sleevelesshoodie flat front
+- sleevelesshoodiescollection-king-killers.jpg — 20KB, sleevelesshoodiescollection king killers
+- swimcollection-1200x.jpg — 350KB, swimcollection 1200x
+- swimcollection-1500x.jpg — 401KB, swimcollection 1500x
+- swimcollection-300x.jpg — 49KB, swimcollection 300x
+- swimcollection-420x.jpg — 80KB, swimcollection 420x
+- swimcollection-560x.jpg — 121KB, swimcollection 560x
+- swimcollection-770x.jpg — 189KB, swimcollection 770x
+- swimcollection-940x.jpg — 249KB, swimcollection 940x
+- swimcollection-king-killers.jpg — 18KB, swimcollection king killers
+- work-harder-motivational-dad-hat-king-ki.jpg — 38KB, section: "KING KILLERS APPAREL", above fold
+- wtrmeloncamo-sleevelesshoodie-flat-front.jpg — 82KB, wtrmeloncamo sleevelesshoodie flat front
+- zebra-print-swim-trunks-king-killers-1-3.jpg — 25KB, section: "KING KILLERS APPAREL", above fold
+- zebra-print-swim-trunks-king-killers-1-5.jpg — 51KB, section: "KING KILLERS APPAREL", above fold
+- zebra-print-swim-trunks-king-killers-1.jpg — 122KB, section: "KING KILLERS APPAREL", above fold
+- svgs/needsclick.svg — icon: needsclick
+- svgs/payment-list-item-10.svg — icon: payment list item 10
+- svgs/payment-list-item-2.svg — icon: payment list item 2
+- svgs/payment-list-item-3.svg — icon: payment list item 3
+- svgs/payment-list-item-4.svg — icon: payment list item 4
+- svgs/payment-list-item-5.svg — icon: payment list item 5
+- svgs/payment-list-item-6.svg — icon: payment list item 6
+- svgs/payment-list-item-7.svg — icon: payment list item 7
+- svgs/payment-list-item-8.svg — icon: payment list item 8
+- svgs/payment-list-item-9.svg — icon: payment list item 9
+- svgs/payment-list-item.svg — icon: payment list item
+- fonts/GTStandard-MMedium.woff2 — font file
+- fonts/GTStandard-MRegular.woff2 — font file
+- fonts/GTStandard-MSemibold.woff2 — font file
+- fonts/InterVariable.woff2 — font file

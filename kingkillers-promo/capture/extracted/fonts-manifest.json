@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "file": "GTStandard-MMedium.woff2",
+      "family": "GT Standard M",
+      "rawFamily": "GT Standard M Medium",
+      "subfamily": "Regular",
+      "postscript": "GTStandard-MMedium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "GTStandard-MRegular.woff2",
+      "family": "GT Standard M",
+      "rawFamily": "GT Standard M",
+      "subfamily": "Regular",
+      "postscript": "GTStandard-MRegular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "GTStandard-MSemibold.woff2",
+      "family": "GT Standard M",
+      "rawFamily": "GT Standard M Semibold",
+      "subfamily": "Regular",
+      "postscript": "GTStandard-MSemibold",
+      "weight": 600,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "InterVariable.woff2",
+      "family": "Inter Variable",
+      "rawFamily": "Inter Variable",
+      "subfamily": "Regular",
+      "postscript": "InterVariable",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "opsz",
+        "wght"
+      ],
+      "identified": true
+    }
+  ],
+  "families": [
+    {
+      "family": "GT Standard M",
+      "weights": [
+        400,
+        500,
+        600
+      ],
+      "variable": false,
+      "fileCount": 3,
+      "files": [
+        "GTStandard-MMedium.woff2",
+        "GTStandard-MRegular.woff2",
+        "GTStandard-MSemibold.woff2"
+      ]
+    },
+    {
+      "family": "Inter Variable",
+      "weights": [
+        400
+      ],
+      "variable": true,
+      "fileCount": 1,
+      "files": [
+        "InterVariable.woff2"
+      ]
+    }
+  ],
+  "unidentified": [],
+  "meta": {
+    "generatedAt": "2026-06-08T18:08:20.744Z",
+    "tool": "fontkit"
+  }
+}
