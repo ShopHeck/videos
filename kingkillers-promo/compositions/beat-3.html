@@ -1,0 +1,49 @@
+<template id="beat-3-template">
+  <div data-composition-id="beat-3" data-width="1080" data-height="1920">
+    <style>
+      [data-composition-id="beat-3"] {
+        width: 1080px; height: 1920px; overflow: hidden; position: relative; background: #0a0a0a; font-family: 'Inter', sans-serif;
+      }
+      .b3-glow { position: absolute; width: 900px; height: 900px; border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(255, 0, 0, 0.1) 0%, transparent 70%); filter: blur(60px); }
+      .b3-content { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 200px 60px; gap: 60px; box-sizing: border-box; }
+      .b3-badge { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+      .b3-badge-icon { font-size: 64px; }
+      .b3-badge-title { font-size: 40px; font-weight: 800; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; }
+      .b3-badge-desc { font-size: 24px; font-weight: 400; color: #777777; }
+      .b3-divider { width: 100px; height: 2px; background: rgba(255, 0, 0, 0.25); }
+    </style>
+    <div class="b3-glow"></div>
+    <div class="b3-content">
+      <div class="b3-badge b3-badge-1">
+        <div class="b3-badge-icon">&#x1F69A;</div>
+        <div class="b3-badge-title">Free USA Shipping</div>
+        <div class="b3-badge-desc">On orders $100+</div>
+      </div>
+      <div class="b3-divider"></div>
+      <div class="b3-badge b3-badge-2">
+        <div class="b3-badge-icon">&#x1F6E1;</div>
+        <div class="b3-badge-title">30-Day Returns</div>
+        <div class="b3-badge-desc">Risk-free guarantee</div>
+      </div>
+      <div class="b3-divider"></div>
+      <div class="b3-badge b3-badge-3">
+        <div class="b3-badge-icon">&#x2B50;</div>
+        <div class="b3-badge-title">50+ Verified Reviews</div>
+        <div class="b3-badge-desc">96% satisfaction rate</div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo('.b3-badge-1', { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'back.out(1.5)' }, 0.1);
+      tl.fromTo('.b3-content > .b3-divider:nth-child(2)', { scaleX: 0 }, { scaleX: 1, duration: 0.25, ease: 'power2.out' }, 0.35);
+      tl.fromTo('.b3-badge-2', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'back.out(1.5)' }, 0.45);
+      tl.fromTo('.b3-content > .b3-divider:nth-child(4)', { scaleX: 0 }, { scaleX: 1, duration: 0.25, ease: 'power2.out' }, 0.7);
+      tl.fromTo('.b3-badge-3', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'back.out(1.5)' }, 0.8);
+      tl.fromTo('.b3-glow', { scale: 0.7, opacity: 0 }, { scale: 1.1, opacity: 1, duration: 1.4, ease: 'sine.out' }, 0);
+      tl.fromTo('.b3-content', { scale: 0.97 }, { scale: 1.03, duration: 2.4, ease: 'none' }, 0);
+      window.__timelines['beat-3'] = tl;
+    </script>
+  </div>
+</template>
