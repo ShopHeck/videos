@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "entry": "index.html",
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  }
+}
