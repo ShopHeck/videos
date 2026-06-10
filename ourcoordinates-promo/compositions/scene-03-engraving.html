@@ -1,0 +1,110 @@
+<template>
+<div id="scene-03" data-composition-id="scene-03-engraving" style="position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0a0a;" data-width="1080" data-height="1920">
+
+  <!-- Background glow -->
+  <div id="glow-03" style="position:absolute;top:45%;left:60%;width:700px;height:700px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse at center, rgba(212,175,55,0.1) 0%, transparent 70%);z-index:1;opacity:0;"></div>
+
+  <!-- Product image with perspective -->
+  <div id="product-wrap-03" style="position:absolute;top:450px;left:50%;transform:translateX(-50%) perspective(900px) rotateY(-3deg);width:700px;height:700px;border-radius:20px;overflow:hidden;z-index:5;opacity:0;">
+    <div id="product-inner-03" style="width:100%;height:100%;transform:scale(1.02);">
+      <img src="capture/assets/2e40d462-2602-4c27-a2bc-208220c60fa0.jpeg" style="width:100%;height:100%;object-fit:cover;" />
+    </div>
+    <!-- Gold overlay shimmer -->
+    <div id="shimmer-03" style="position:absolute;top:0;left:-100%;width:50%;height:100%;background:linear-gradient(90deg, transparent, rgba(212,175,55,0.15), transparent);z-index:3;transform:skewX(-15deg);"></div>
+  </div>
+
+  <!-- SVG Engraving path animation -->
+  <div id="svg-engrave" style="position:absolute;top:240px;left:50%;transform:translateX(-50%);width:600px;height:160px;z-index:10;opacity:0;">
+    <svg viewBox="0 0 600 160" width="600" height="160">
+      <!-- Decorative engraving lines -->
+      <path id="engrave-path-1" d="M 50 80 C 100 40, 200 40, 280 80 S 450 120, 550 80" stroke="#d4af37" stroke-width="2" fill="none" stroke-linecap="round" style="stroke-dasharray:600;stroke-dashoffset:600;" />
+      <path id="engrave-path-2" d="M 80 110 L 200 110 C 250 110, 280 100, 320 100 L 520 100" stroke="#bfa265" stroke-width="1.5" fill="none" stroke-linecap="round" style="stroke-dasharray:500;stroke-dashoffset:500;" />
+      <!-- Coordinate text path -->
+      <text x="150" y="55" font-family="RM Neue, serif" font-style="italic" font-size="22" fill="#d4af37" stroke="#d4af37" stroke-width="0.8" style="stroke-dasharray:300;stroke-dashoffset:300;" id="engrave-text">40.7128 N, 74.0060 W</text>
+    </svg>
+  </div>
+
+  <!-- Spark particles canvas -->
+  <canvas id="sparks-03" width="1080" height="1920" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:8;pointer-events:none;"></canvas>
+
+  <!-- Text -->
+  <div id="text-03" style="position:absolute;top:1240px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:38px;color:#f5f0e8;letter-spacing:-0.02em;">Hand Engraved</div>
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:38px;color:#d4af37;letter-spacing:-0.02em;margin-top:8px;">With Love</div>
+  </div>
+
+  <!-- Decorative dots -->
+  <div id="dots-03" style="position:absolute;top:1380px;left:50%;transform:translateX(-50%);display:flex;gap:12px;z-index:10;opacity:0;">
+    <div style="width:6px;height:6px;border-radius:50%;background:#d4af37;"></div>
+    <div style="width:6px;height:6px;border-radius:50%;background:#bfa265;"></div>
+    <div style="width:6px;height:6px;border-radius:50%;background:#d4af37;"></div>
+  </div>
+
+  <!-- Bottom accent -->
+  <div id="accent-03" style="position:absolute;bottom:200px;left:50%;transform:translateX(-50%);width:80px;height:80px;border:1px solid rgba(212,175,55,0.3);border-radius:50%;z-index:5;opacity:0;display:flex;align-items:center;justify-content:center;">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M12 2L15 8L21 9L16.5 14L18 21L12 17.5L6 21L7.5 14L3 9L9 8Z" fill="#d4af37" opacity="0.7"/>
+    </svg>
+  </div>
+
+  <style>
+    @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+    @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; }
+  </style>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    window.__timelines["scene-03-engraving"] = tl;
+
+    // Glow entrance
+    tl.fromTo("#glow-03", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1.1, duration: 2.0, ease: "sine.inOut" }, 0.1);
+
+    // Product image entrance
+    tl.fromTo("#product-wrap-03", { opacity: 0, y: 50, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 1.2, ease: "power3.out" }, 0.3);
+
+    // Ken Burns on product
+    tl.fromTo("#product-inner-03", { scale: 1.02 }, { scale: 1.1, duration: 4.0, ease: "sine.inOut" }, 0.3);
+
+    // Shimmer sweep
+    tl.fromTo("#shimmer-03", { left: "-100%" }, { left: "200%", duration: 2.0, ease: "power1.inOut" }, 1.5);
+
+    // SVG container appear
+    tl.fromTo("#svg-engrave", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.5);
+
+    // SVG path drawing
+    tl.to("#engrave-path-1", { strokeDashoffset: 0, duration: 2.0, ease: "power2.out" }, 0.8);
+    tl.to("#engrave-path-2", { strokeDashoffset: 0, duration: 1.8, ease: "power2.out" }, 1.2);
+    tl.to("#engrave-text", { strokeDashoffset: 0, duration: 2.5, ease: "power1.out" }, 1.0);
+
+    // Sparks animation
+    var sparkCanvas = document.getElementById("sparks-03");
+    var sCtx = sparkCanvas.getContext("2d");
+    function hashS(x, y) { var n = x * 374761393 + y * 668265263; n = (n ^ (n >> 13)) * 1274126177; return ((n ^ (n >> 16)) & 0x7fffffff) / 0x7fffffff; }
+    function drawSparks(t) {
+      sCtx.clearRect(0, 0, 1080, 1920);
+      var sparkCount = Math.floor(t * 8) % 20;
+      for (var i = 0; i < sparkCount; i++) {
+        var sx = 340 + hashS(i, Math.floor(t * 5)) * 400;
+        var sy = 280 + hashS(i + 50, Math.floor(t * 5)) * 100;
+        var alpha = 0.4 + hashS(i, 3) * 0.6;
+        sCtx.beginPath();
+        sCtx.arc(sx, sy, 1.5, 0, Math.PI * 2);
+        sCtx.fillStyle = "rgba(212,175,55," + alpha + ")";
+        sCtx.fill();
+      }
+    }
+    var proxyS = { time: 0 };
+    tl.to(proxyS, { time: 4.5, duration: 4.5, ease: "none", onUpdate: function() { drawSparks(proxyS.time); } }, 0);
+
+    // Text entrance
+    tl.fromTo("#text-03", { opacity: 0, y: 25 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 2.0);
+
+    // Dots
+    tl.fromTo("#dots-03", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 2.5);
+
+    // Bottom accent
+    tl.fromTo("#accent-03", { opacity: 0, scale: 0.5, rotation: -90 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.8, ease: "power3.out" }, 2.8);
+  </script>
+</div>
+</template>

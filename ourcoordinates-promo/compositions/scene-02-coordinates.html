@@ -1,0 +1,105 @@
+<template>
+<div id="scene-02" data-composition-id="scene-02-coordinates" style="position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0a0a;" data-width="1080" data-height="1920">
+
+  <!-- Deep radial glow -->
+  <div id="glow-02" style="position:absolute;top:35%;left:50%;width:900px;height:900px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse at center, rgba(212,175,55,0.12) 0%, transparent 70%);z-index:1;opacity:0;"></div>
+
+  <!-- Warm overlay -->
+  <div style="position:absolute;inset:0;background:rgba(212,175,55,0.04);z-index:2;"></div>
+
+  <!-- Floating particles canvas -->
+  <canvas id="particles-02" width="1080" height="1920" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:3;"></canvas>
+
+  <!-- Coordinates display -->
+  <div id="coords-hero" style="position:absolute;top:260px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div id="coord-hero-lat" style="font-family:'RM Neue',serif;font-style:italic;font-weight:300;font-size:52px;color:#d4af37;letter-spacing:0.04em;text-shadow:0 0 30px rgba(212,175,55,0.4);">40.7128&#176; N</div>
+    <div id="coord-hero-lon" style="font-family:'RM Neue',serif;font-style:italic;font-weight:300;font-size:52px;color:#bfa265;letter-spacing:0.04em;margin-top:12px;text-shadow:0 0 20px rgba(191,162,101,0.3);">74.0060&#176; W</div>
+  </div>
+
+  <!-- Tagline -->
+  <div id="tagline-02" style="position:absolute;top:440px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:40px;color:#f5f0e8;letter-spacing:-0.02em;line-height:1.3;">Every place tells<br>a story</div>
+  </div>
+
+  <!-- Decorative line -->
+  <div id="line-02" style="position:absolute;top:540px;left:50%;transform:translateX(-50%) scaleX(0);width:120px;height:2px;background:linear-gradient(90deg, transparent, #d4af37, transparent);z-index:10;"></div>
+
+  <!-- Lifestyle image with Ken Burns -->
+  <div id="img-frame-02" style="position:absolute;top:600px;left:50%;transform:translateX(-50%);width:680px;height:680px;border-radius:24px;overflow:hidden;border:2px solid rgba(212,175,55,0.2);z-index:10;opacity:0;">
+    <div id="img-inner-02" style="width:100%;height:100%;transform:scale(1.05);">
+      <img src="capture/assets/personalized-jewelry-for-wanderers.jpg" style="width:100%;height:100%;object-fit:cover;" />
+    </div>
+    <!-- Gradient overlay at bottom -->
+    <div style="position:absolute;bottom:0;left:0;right:0;height:200px;background:linear-gradient(to top, rgba(10,10,10,0.8), transparent);z-index:2;"></div>
+  </div>
+
+  <!-- Bottom text -->
+  <div id="bottom-text-02" style="position:absolute;bottom:280px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'Inter',sans-serif;font-weight:300;font-size:18px;color:#b8b0a4;letter-spacing:0.02em;">Where did your story begin?</div>
+  </div>
+
+  <!-- Corner accents -->
+  <div id="corner-tl" style="position:absolute;top:120px;left:80px;width:40px;height:40px;border-top:2px solid rgba(212,175,55,0.3);border-left:2px solid rgba(212,175,55,0.3);z-index:5;opacity:0;"></div>
+  <div id="corner-br" style="position:absolute;bottom:120px;right:80px;width:40px;height:40px;border-bottom:2px solid rgba(212,175,55,0.3);border-right:2px solid rgba(212,175,55,0.3);z-index:5;opacity:0;"></div>
+
+  <style>
+    @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+    @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf') format('truetype'); font-weight: 300; font-style: normal; }
+    @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; }
+  </style>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    window.__timelines["scene-02-coordinates"] = tl;
+
+    // Particles
+    var canvas = document.getElementById("particles-02");
+    var ctx = canvas.getContext("2d");
+    function hashP2(x, y) { var n = x * 374761393 + y * 668265263; n = (n ^ (n >> 13)) * 1274126177; return ((n ^ (n >> 16)) & 0x7fffffff) / 0x7fffffff; }
+    function drawP2(t) {
+      ctx.clearRect(0, 0, 1080, 1920);
+      for (var i = 0; i < 30; i++) {
+        var px = hashP2(i, 0) * 1080;
+        var py = (hashP2(i, 1) * 1920 + t * 20) % 1920;
+        var alpha = 0.1 + hashP2(i, 2) * 0.3;
+        var size = 1 + hashP2(i, 3) * 2;
+        ctx.beginPath();
+        ctx.arc(px, py, size, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(212,175,55," + alpha + ")";
+        ctx.fill();
+      }
+    }
+    var proxy02 = { time: 0 };
+    tl.to(proxy02, { time: 4, duration: 4, ease: "none", onUpdate: function() { drawP2(proxy02.time); } }, 0);
+
+    // Glow pulse
+    tl.fromTo("#glow-02", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1.1, duration: 2.5, ease: "sine.inOut" }, 0.1);
+    tl.to("#glow-02", { scale: 1.3, opacity: 0.8, duration: 1.5, ease: "sine.inOut" }, 2.6);
+
+    // Coordinates entrance
+    tl.fromTo("#coords-hero", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 0.2);
+    tl.fromTo("#coord-hero-lat", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 0.4);
+    tl.fromTo("#coord-hero-lon", { opacity: 0, x: 20 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 0.6);
+
+    // Tagline
+    tl.fromTo("#tagline-02", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 0.8);
+
+    // Decorative line
+    tl.fromTo("#line-02", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, 1.2);
+
+    // Image frame
+    tl.fromTo("#img-frame-02", { opacity: 0, y: 40, scale: 0.95 }, { opacity: 1, y: 0, scale: 1, duration: 1.0, ease: "power3.out" }, 1.0);
+
+    // Ken Burns on image
+    tl.fromTo("#img-inner-02", { scale: 1.05 }, { scale: 1.15, duration: 3.5, ease: "sine.inOut" }, 0.5);
+
+    // Bottom text
+    tl.fromTo("#bottom-text-02", { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.5, ease: "power1.out" }, 1.8);
+
+    // Corner accents
+    tl.fromTo("#corner-tl", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 0.3);
+    tl.fromTo("#corner-br", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 0.5);
+  </script>
+</div>
+</template>

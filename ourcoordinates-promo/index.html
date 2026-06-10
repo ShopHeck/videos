@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+</head>
+<body style="margin:0;padding:0;background:#0a0a0a;">
+<div id="root" data-composition-id="ourcoordinates-promo" data-start="0" data-duration="22.8" data-width="1080" data-height="1920">
+
+  <!-- Scene 1: Typing (0s - 4.5s) -->
+  <div id="scene-01-wrap" data-composition-id="scene-01-typing" data-composition-src="compositions/scene-01-typing.html" data-start="0" data-duration="4.5" data-track-index="0" style="position:absolute;inset:0;z-index:1;"></div>
+
+  <!-- Scene 2: Coordinates (3.7s - 7.7s) -->
+  <div id="scene-02-wrap" data-composition-id="scene-02-coordinates" data-composition-src="compositions/scene-02-coordinates.html" data-start="3.7" data-duration="4.0" data-track-index="1" style="position:absolute;inset:0;z-index:2;opacity:0;"></div>
+
+  <!-- Scene 3: Engraving (6.7s - 11.2s) -->
+  <div id="scene-03-wrap" data-composition-id="scene-03-engraving" data-composition-src="compositions/scene-03-engraving.html" data-start="6.7" data-duration="4.5" data-track-index="2" style="position:absolute;inset:0;z-index:3;opacity:0;"></div>
+
+  <!-- Scene 4: Packaging (10.4s - 13.9s) -->
+  <div id="scene-04-wrap" data-composition-id="scene-04-packaging" data-composition-src="compositions/scene-04-packaging.html" data-start="10.4" data-duration="3.5" data-track-index="3" style="position:absolute;inset:0;z-index:4;opacity:0;"></div>
+
+  <!-- Scene 5: Unboxing (13.1s - 17.1s) -->
+  <div id="scene-05-wrap" data-composition-id="scene-05-unboxing" data-composition-src="compositions/scene-05-unboxing.html" data-start="13.1" data-duration="4.0" data-track-index="4" style="position:absolute;inset:0;z-index:5;opacity:0;"></div>
+
+  <!-- Scene 6: On Wrist (16.1s - 19.6s) -->
+  <div id="scene-06-wrap" data-composition-id="scene-06-wrist" data-composition-src="compositions/scene-06-wrist.html" data-start="16.1" data-duration="3.5" data-track-index="5" style="position:absolute;inset:0;z-index:6;opacity:0;"></div>
+
+  <!-- Scene 7: CTA (18.8s - 22.8s) -->
+  <div id="scene-07-wrap" data-composition-id="scene-07-cta" data-composition-src="compositions/scene-07-cta.html" data-start="18.8" data-duration="4.0" data-track-index="6" style="position:absolute;inset:0;z-index:7;opacity:0;"></div>
+
+  <!-- Light leak overlay elements (for scene 6->7 transition) -->
+  <div id="leak-warm" style="position:absolute;top:-200px;left:-200px;width:2400px;height:2400px;background:radial-gradient(ellipse at center, rgba(212,175,55,0.4) 0%, rgba(212,175,55,0.1) 40%, transparent 70%);z-index:50;opacity:0;pointer-events:none;"></div>
+  <div id="leak-1" style="position:absolute;top:0;left:-800px;width:600px;height:2400px;background:linear-gradient(90deg, transparent, rgba(212,175,55,0.3), transparent);z-index:51;opacity:0;pointer-events:none;"></div>
+  <div id="leak-2" style="position:absolute;top:0;left:-600px;width:400px;height:2400px;background:linear-gradient(90deg, transparent, rgba(245,240,232,0.2), transparent);z-index:51;opacity:0;pointer-events:none;"></div>
+
+  <!-- SFX Audio -->
+  <audio id="sfx-impact" data-start="0" data-duration="2.12" data-track-index="10" src="sfx/impact-bass-1.mp3"></audio>
+  <audio id="sfx-whoosh-1" data-start="3.7" data-duration="5.54" data-track-index="11" src="sfx/whoosh-cinematic.mp3"></audio>
+  <audio id="sfx-chime-1" data-start="7.5" data-duration="2.5" data-track-index="12" src="sfx/chime.mp3"></audio>
+  <audio id="sfx-whoosh-2" data-start="10.4" data-duration="5.54" data-track-index="13" src="sfx/whoosh-cinematic.mp3"></audio>
+  <audio id="sfx-chime-2" data-start="13.8" data-duration="2.5" data-track-index="14" src="sfx/chime.mp3"></audio>
+  <audio id="sfx-whoosh-3" data-start="16.1" data-duration="5.54" data-track-index="15" src="sfx/whoosh-cinematic.mp3"></audio>
+  <audio id="sfx-sparkle" data-start="19.0" data-duration="1.8" data-track-index="16" src="sfx/sparkle.mp3"></audio>
+
+  <style>
+    @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+    @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+    @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf') format('truetype'); font-weight: 300; font-style: normal; }
+    @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+    @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; }
+    @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-SemiBoldItalic.woff2') format('woff2'); font-weight: 600; font-style: italic; }
+    @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-BoldItalic.woff2') format('woff2'); font-weight: 700; font-style: italic; }
+
+    #root {
+      position: relative;
+      width: 1080px;
+      height: 1920px;
+      overflow: hidden;
+      background: #0a0a0a;
+    }
+  </style>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    window.__timelines["ourcoordinates-promo"] = tl;
+
+    // ============================
+    // TRANSITION 1: Scene 1 -> Scene 2 (Blur Crossfade, calm variant)
+    // Overlap at t=3.7, scene 1 ends 4.5, overlap duration ~0.8s
+    // ============================
+    var T1 = 3.7;
+    tl.to("#scene-01-wrap", { filter: "blur(25px)", scale: 1.05, duration: 0.6, ease: "power1.in" }, T1);
+    tl.to("#scene-01-wrap", { opacity: 0, duration: 0.4, ease: "power1.in" }, T1 + 0.4);
+    tl.fromTo("#scene-02-wrap", { filter: "blur(25px)", scale: 0.95, opacity: 0 }, { filter: "blur(25px)", scale: 0.95, opacity: 1, duration: 0.3, ease: "power1.inOut" }, T1 + 0.5);
+    tl.to("#scene-02-wrap", { filter: "blur(0px)", scale: 1, duration: 0.6, ease: "power1.out" }, T1 + 0.8);
+
+    // ============================
+    // TRANSITION 2: Scene 2 -> Scene 3 (Focus Pull)
+    // Overlap at t=6.7, scene 2 ends 7.7, overlap duration ~1.0s
+    // ============================
+    var T2 = 6.7;
+    tl.to("#scene-02-wrap", { filter: "blur(30px)", duration: 0.8, ease: "power1.in" }, T2);
+    tl.to("#scene-02-wrap", { opacity: 0, duration: 0.5, ease: "power1.in" }, T2 + 0.6);
+    tl.fromTo("#scene-03-wrap", { opacity: 0, filter: "blur(20px)" }, { opacity: 1, filter: "blur(20px)", duration: 0.3, ease: "power1.inOut" }, T2 + 0.7);
+    tl.to("#scene-03-wrap", { filter: "blur(0px)", duration: 0.6, ease: "power1.out" }, T2 + 1.0);
+
+    // ============================
+    // TRANSITION 3: Scene 3 -> Scene 4 (Blur Crossfade, calm variant)
+    // Overlap at t=10.4, scene 3 ends 11.2, overlap duration ~0.8s
+    // ============================
+    var T3 = 10.4;
+    tl.to("#scene-03-wrap", { filter: "blur(25px)", scale: 1.05, duration: 0.6, ease: "power1.in" }, T3);
+    tl.to("#scene-03-wrap", { opacity: 0, duration: 0.4, ease: "power1.in" }, T3 + 0.4);
+    tl.fromTo("#scene-04-wrap", { filter: "blur(25px)", scale: 0.95, opacity: 0 }, { filter: "blur(25px)", scale: 0.95, opacity: 1, duration: 0.3, ease: "power1.inOut" }, T3 + 0.5);
+    tl.to("#scene-04-wrap", { filter: "blur(0px)", scale: 1, duration: 0.6, ease: "power1.out" }, T3 + 0.8);
+
+    // ============================
+    // TRANSITION 4: Scene 4 -> Scene 5 (Blur Crossfade, calm variant)
+    // Overlap at t=13.1, scene 4 ends 13.9, overlap duration ~0.8s
+    // ============================
+    var T4 = 13.1;
+    tl.to("#scene-04-wrap", { filter: "blur(25px)", scale: 1.05, duration: 0.6, ease: "power1.in" }, T4);
+    tl.to("#scene-04-wrap", { opacity: 0, duration: 0.4, ease: "power1.in" }, T4 + 0.4);
+    tl.fromTo("#scene-05-wrap", { filter: "blur(25px)", scale: 0.95, opacity: 0 }, { filter: "blur(25px)", scale: 0.95, opacity: 1, duration: 0.3, ease: "power1.inOut" }, T4 + 0.5);
+    tl.to("#scene-05-wrap", { filter: "blur(0px)", scale: 1, duration: 0.6, ease: "power1.out" }, T4 + 0.8);
+
+    // ============================
+    // TRANSITION 5: Scene 5 -> Scene 6 (Focus Pull)
+    // Overlap at t=16.1, scene 5 ends 17.1, overlap duration ~1.0s
+    // ============================
+    var T5 = 16.1;
+    tl.to("#scene-05-wrap", { filter: "blur(30px)", duration: 0.8, ease: "power1.in" }, T5);
+    tl.to("#scene-05-wrap", { opacity: 0, duration: 0.5, ease: "power1.in" }, T5 + 0.6);
+    tl.fromTo("#scene-06-wrap", { opacity: 0, filter: "blur(20px)" }, { opacity: 1, filter: "blur(20px)", duration: 0.3, ease: "power1.inOut" }, T5 + 0.7);
+    tl.to("#scene-06-wrap", { filter: "blur(0px)", duration: 0.6, ease: "power1.out" }, T5 + 1.0);
+
+    // ============================
+    // TRANSITION 6: Scene 6 -> Scene 7 (Light Leak)
+    // Overlap at t=18.8, scene 6 ends 19.6, overlap duration ~0.8s
+    // ============================
+    var T6 = 18.8;
+    tl.to("#leak-warm", { opacity: 0.4, duration: 0.3, ease: "power1.in" }, T6);
+    tl.to("#leak-1", { opacity: 0.9, x: 300, duration: 0.5, ease: "sine.inOut" }, T6 + 0.05);
+    tl.to("#leak-2", { opacity: 0.8, x: 200, duration: 0.6, ease: "sine.inOut" }, T6 + 0.1);
+    tl.to("#leak-warm", { opacity: 0.6, duration: 0.15, ease: "power2.in" }, T6 + 0.35);
+    tl.set("#scene-06-wrap", { opacity: 0 }, T6 + 0.45);
+    tl.set("#scene-07-wrap", { opacity: 1 }, T6 + 0.45);
+    tl.to("#leak-warm", { opacity: 0, duration: 0.4, ease: "power2.out" }, T6 + 0.55);
+    tl.to("#leak-1", { opacity: 0, x: 600, duration: 0.35, ease: "power1.out" }, T6 + 0.6);
+    tl.to("#leak-2", { opacity: 0, x: 500, duration: 0.35, ease: "power1.out" }, T6 + 0.75);
+
+    // Extend timeline to full duration
+    tl.set({}, {}, 22.8);
+  </script>
+</div>
+</body>
+</html>

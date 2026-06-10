@@ -1,0 +1,116 @@
+<template>
+<div id="scene-07" data-composition-id="scene-07-cta" style="position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0a0a;" data-width="1080" data-height="1920">
+
+  <!-- Background radial glow -->
+  <div id="glow-07" style="position:absolute;top:50%;left:50%;width:1000px;height:1000px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse at center, rgba(212,175,55,0.15) 0%, transparent 65%);z-index:1;opacity:0;"></div>
+
+  <!-- Second glow layer -->
+  <div id="glow-07-b" style="position:absolute;top:60%;left:50%;width:600px;height:600px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse at center, rgba(212,175,55,0.08) 0%, transparent 70%);z-index:1;opacity:0;"></div>
+
+  <!-- Floating particles canvas -->
+  <canvas id="particles-07" width="1080" height="1920" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:3;pointer-events:none;"></canvas>
+
+  <!-- Logo -->
+  <div id="logo-07" style="position:absolute;top:320px;left:50%;transform:translateX(-50%);z-index:10;opacity:0;">
+    <img src="capture/assets/ourcoordinates-logo-image-our-coordinate.png" style="width:180px;height:auto;filter:brightness(1.1);" />
+  </div>
+
+  <!-- Hero text -->
+  <div id="hero-text-07" style="position:absolute;top:560px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:56px;color:#f5f0e8;letter-spacing:-0.02em;line-height:1.2;">Find Your<br>Coordinates<br>Today</div>
+  </div>
+
+  <!-- Website URL -->
+  <div id="url-07" style="position:absolute;top:840px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'Inter',sans-serif;font-weight:500;font-size:28px;color:#d4af37;letter-spacing:0.02em;">OurCoordinates.com</div>
+  </div>
+
+  <!-- Offer badge -->
+  <div id="offer-07" style="position:absolute;top:960px;left:50%;transform:translateX(-50%);z-index:10;opacity:0;">
+    <div style="background:linear-gradient(135deg, #d4af37, #bfa265);border-radius:4px;padding:18px 42px;text-align:center;">
+      <div style="font-family:'Inter',sans-serif;font-weight:500;font-size:20px;color:#0a0a0a;letter-spacing:0.06em;text-transform:uppercase;">BUY 1 GET 1 FREE</div>
+      <div style="font-family:'Inter',sans-serif;font-weight:400;font-size:16px;color:#0a0a0a;letter-spacing:0.04em;margin-top:6px;">+ FREE SHIPPING</div>
+    </div>
+  </div>
+
+  <!-- Decorative line above offer -->
+  <div id="line-07" style="position:absolute;top:920px;left:50%;transform:translateX(-50%) scaleX(0);width:160px;height:2px;background:linear-gradient(90deg, transparent, #d4af37, transparent);z-index:10;"></div>
+
+  <!-- Coordinates accent -->
+  <div id="coords-07" style="position:absolute;top:1120px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'RM Neue',serif;font-style:italic;font-weight:300;font-size:18px;color:#bfa265;letter-spacing:0.04em;">Your place. Your story. Your jewelry.</div>
+  </div>
+
+  <!-- Corner accents -->
+  <div id="corner-cta-tl" style="position:absolute;top:200px;left:100px;width:50px;height:50px;border-top:2px solid rgba(212,175,55,0.3);border-left:2px solid rgba(212,175,55,0.3);z-index:5;opacity:0;"></div>
+  <div id="corner-cta-br" style="position:absolute;bottom:200px;right:100px;width:50px;height:50px;border-bottom:2px solid rgba(212,175,55,0.3);border-right:2px solid rgba(212,175,55,0.3);z-index:5;opacity:0;"></div>
+
+  <!-- Black overlay for fade to black (exit animation - only scene 7 has this) -->
+  <div id="fade-black" style="position:absolute;inset:0;background:#0a0a0a;z-index:100;opacity:0;"></div>
+
+  <style>
+    @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+    @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+    @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; }
+  </style>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    window.__timelines["scene-07-cta"] = tl;
+
+    // Particles
+    var canvas = document.getElementById("particles-07");
+    var ctx = canvas.getContext("2d");
+    function hashP7(x, y) { var n = x * 374761393 + y * 668265263; n = (n ^ (n >> 13)) * 1274126177; return ((n ^ (n >> 16)) & 0x7fffffff) / 0x7fffffff; }
+    function drawP7(t) {
+      ctx.clearRect(0, 0, 1080, 1920);
+      for (var i = 0; i < 35; i++) {
+        var px = hashP7(i, 0) * 1080;
+        var py = (hashP7(i, 1) * 1920 + t * 25) % 1920;
+        var alpha = 0.15 + hashP7(i, 2) * 0.35;
+        var size = 1.5 + hashP7(i, 3) * 2.5;
+        ctx.beginPath();
+        ctx.arc(px, py, size, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(212,175,55," + alpha + ")";
+        ctx.fill();
+      }
+    }
+    var proxy07 = { time: 0 };
+    tl.to(proxy07, { time: 4, duration: 4, ease: "none", onUpdate: function() { drawP7(proxy07.time); } }, 0);
+
+    // Glow entrance
+    tl.fromTo("#glow-07", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1.0, duration: 1.4, ease: "power2.out" }, 0.1);
+    tl.fromTo("#glow-07-b", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1.0, duration: 1.5, ease: "sine.inOut" }, 0.3);
+
+    // Glow pulse
+    tl.to("#glow-07", { scale: 1.2, opacity: 0.8, duration: 2.0, ease: "sine.inOut", yoyo: true, repeat: 1 }, 1.6);
+
+    // Logo entrance
+    tl.fromTo("#logo-07", { opacity: 0, y: -20, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: "power2.out" }, 0.2);
+
+    // Hero text stagger
+    tl.fromTo("#hero-text-07", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 0.5);
+
+    // URL
+    tl.fromTo("#url-07", { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.9);
+
+    // Line
+    tl.fromTo("#line-07", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, 1.1);
+
+    // Offer badge
+    tl.fromTo("#offer-07", { opacity: 0, y: 20, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: "back.out(1.5)" }, 1.2);
+
+    // Coordinates accent
+    tl.fromTo("#coords-07", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 1.6);
+
+    // Corner accents
+    tl.fromTo("#corner-cta-tl", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 0.4);
+    tl.fromTo("#corner-cta-br", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 0.6);
+
+    // Fade to black (exit animation - only scene 7)
+    tl.fromTo("#fade-black", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "power2.in" }, 3.2);
+  </script>
+</div>
+</template>

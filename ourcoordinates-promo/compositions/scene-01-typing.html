@@ -1,0 +1,120 @@
+<template>
+<div id="scene-01" data-composition-id="scene-01-typing" style="position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0a0a;" data-width="1080" data-height="1920">
+
+  <!-- Background gold particles -->
+  <canvas id="particles-01" width="1080" height="1920" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;"></canvas>
+
+  <!-- Subtle radial glow -->
+  <div id="glow-01" style="position:absolute;top:50%;left:50%;width:800px;height:800px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse at center, rgba(212,175,55,0.1) 0%, transparent 70%);z-index:2;opacity:0;"></div>
+
+  <!-- iPhone mockup -->
+  <div id="phone-frame" style="position:absolute;top:380px;left:50%;transform:translateX(-50%);width:380px;height:780px;background:#1a1a1a;border-radius:48px;border:3px solid rgba(212,175,55,0.3);z-index:10;overflow:hidden;opacity:0;">
+    <!-- Notch -->
+    <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:160px;height:34px;background:#0a0a0a;border-radius:0 0 20px 20px;z-index:12;"></div>
+    <!-- Screen content -->
+    <div style="position:absolute;top:60px;left:24px;right:24px;bottom:24px;">
+      <!-- Search bar -->
+      <div id="search-bar" style="width:100%;height:52px;background:rgba(245,240,232,0.08);border-radius:26px;border:1px solid rgba(212,175,55,0.25);display:flex;align-items:center;padding:0 20px;margin-top:40px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="margin-right:12px;opacity:0.5;">
+          <circle cx="11" cy="11" r="7" stroke="#b8b0a4" stroke-width="2"/>
+          <path d="M16 16L20 20" stroke="#b8b0a4" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span id="typed-text" style="font-family:'Inter',sans-serif;font-size:16px;color:#f5f0e8;letter-spacing:0.01em;"></span>
+        <span id="cursor-01" style="display:inline-block;width:2px;height:20px;background:#d4af37;margin-left:2px;opacity:1;"></span>
+      </div>
+
+      <!-- Coordinates result -->
+      <div id="coords-result" style="margin-top:32px;padding:20px;background:rgba(212,175,55,0.05);border-radius:16px;border:1px solid rgba(212,175,55,0.15);opacity:0;">
+        <div id="coord-label" style="font-family:'Inter',sans-serif;font-size:12px;color:#b8b0a4;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;opacity:0;">COORDINATES FOUND</div>
+        <div id="coord-lat" style="font-family:'RM Neue',serif;font-style:italic;font-size:28px;color:#d4af37;letter-spacing:0.04em;opacity:0;">40.7128&#176; N</div>
+        <div id="coord-lon" style="font-family:'RM Neue',serif;font-style:italic;font-size:28px;color:#bfa265;letter-spacing:0.04em;margin-top:8px;opacity:0;">74.0060&#176; W</div>
+      </div>
+
+      <!-- Map pin icon -->
+      <div id="map-pin" style="position:absolute;bottom:120px;left:50%;transform:translateX(-50%);opacity:0;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#d4af37" opacity="0.8"/>
+          <circle cx="12" cy="9" r="2.5" fill="#0a0a0a"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top text -->
+  <div id="top-text-01" style="position:absolute;top:200px;left:50%;transform:translateX(-50%);text-align:center;z-index:5;opacity:0;">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:36px;color:#f5f0e8;letter-spacing:-0.02em;">Where did your</div>
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:42px;color:#d4af37;letter-spacing:-0.02em;margin-top:8px;">story begin?</div>
+  </div>
+
+  <!-- Bottom accent line -->
+  <div id="accent-line-01" style="position:absolute;bottom:180px;left:50%;transform:translateX(-50%) scaleX(0);width:200px;height:1px;background:linear-gradient(90deg, transparent, #d4af37, transparent);z-index:5;"></div>
+
+  <style>
+    @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+    @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf') format('truetype'); font-weight: 300; font-style: normal; }
+    @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; }
+  </style>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    window.__timelines["scene-01-typing"] = tl;
+
+    // Gold particles
+    var canvas = document.getElementById("particles-01");
+    var ctx = canvas.getContext("2d");
+    function hashP(x, y) { var n = x * 374761393 + y * 668265263; n = (n ^ (n >> 13)) * 1274126177; return ((n ^ (n >> 16)) & 0x7fffffff) / 0x7fffffff; }
+    function drawParticles(t) {
+      ctx.clearRect(0, 0, 1080, 1920);
+      for (var i = 0; i < 40; i++) {
+        var bx = hashP(i, 0) * 1080;
+        var by = (hashP(i, 1) * 1920 + t * 30) % 1920;
+        var alpha = 0.15 + hashP(i, 2) * 0.35;
+        var size = 1.5 + hashP(i, 3) * 2.5;
+        ctx.beginPath();
+        ctx.arc(bx, by, size, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(212,175,55," + alpha + ")";
+        ctx.fill();
+      }
+    }
+    var proxy01 = { time: 0 };
+    tl.to(proxy01, { time: 4.5, duration: 4.5, ease: "none", onUpdate: function() { drawParticles(proxy01.time); } }, 0);
+
+    // Glow entrance
+    tl.fromTo("#glow-01", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1.2, duration: 3.0, ease: "sine.inOut" }, 0.2);
+
+    // Top text entrance
+    tl.fromTo("#top-text-01", { opacity: 0, y: -30 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 0.2);
+
+    // Phone frame entrance
+    tl.fromTo("#phone-frame", { opacity: 0, y: 60, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 1.0, ease: "power3.out" }, 0.4);
+
+    // Cursor blink
+    tl.fromTo("#cursor-01", { opacity: 1 }, { opacity: 0, duration: 0.4, yoyo: true, repeat: 10, ease: "steps(1)" }, 0.5);
+
+    // Typing animation
+    var CMD = "Central Park, New York";
+    var typed = document.getElementById("typed-text");
+    var typeDuration = 2.0;
+    var typeStart = 1.2;
+    for (var i = 0; i < CMD.length; i++) {
+      (function(idx) {
+        tl.call(function() { typed.textContent = CMD.substring(0, idx + 1); }, null, typeStart + (idx / CMD.length) * typeDuration);
+      })(i);
+    }
+
+    // Coordinates result reveal
+    tl.fromTo("#coords-result", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 3.4);
+    tl.fromTo("#coord-label", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out" }, 3.5);
+    tl.fromTo("#coord-lat", { opacity: 0, x: -15 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 3.7);
+    tl.fromTo("#coord-lon", { opacity: 0, x: -15 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 3.9);
+
+    // Map pin
+    tl.fromTo("#map-pin", { opacity: 0, y: 20, scale: 0.5 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "back.out(2)" }, 3.6);
+
+    // Accent line
+    tl.fromTo("#accent-line-01", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power2.out" }, 3.8);
+  </script>
+</div>
+</template>

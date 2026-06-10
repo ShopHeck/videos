@@ -1,0 +1,103 @@
+<template>
+<div id="scene-06" data-composition-id="scene-06-wrist" style="position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0a0a;" data-width="1080" data-height="1920">
+
+  <!-- Background radial glow -->
+  <div id="glow-06" style="position:absolute;top:45%;left:50%;width:900px;height:900px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse at center, rgba(212,175,55,0.1) 0%, transparent 70%);z-index:1;opacity:0;"></div>
+
+  <!-- Parallax depth layer (subtle) -->
+  <div id="depth-layer-06" style="position:absolute;inset:-40px;background:radial-gradient(circle at 30% 40%, rgba(212,175,55,0.04) 0%, transparent 50%);z-index:2;"></div>
+
+  <!-- Product image with shimmer -->
+  <div id="product-frame-06" style="position:absolute;top:350px;left:50%;transform:translateX(-50%);width:720px;height:720px;border-radius:20px;overflow:hidden;border:2px solid rgba(212,175,55,0.2);z-index:10;opacity:0;">
+    <div id="product-inner-06" style="width:100%;height:100%;transform:scale(1.02);">
+      <img src="capture/assets/coordinates-jewelry-collection-443934-15.jpg" style="width:100%;height:100%;object-fit:cover;" />
+    </div>
+    <!-- Gold shimmer overlay -->
+    <div id="shimmer-06" style="position:absolute;top:0;left:-100%;width:40%;height:100%;background:linear-gradient(90deg, transparent, rgba(212,175,55,0.12), transparent);z-index:3;transform:skewX(-15deg);"></div>
+    <!-- Bottom gradient -->
+    <div style="position:absolute;bottom:0;left:0;right:0;height:180px;background:linear-gradient(to top, rgba(10,10,10,0.8), transparent);z-index:2;"></div>
+  </div>
+
+  <!-- Main text -->
+  <div id="text-main-06" style="position:absolute;top:200px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:48px;color:#f5f0e8;letter-spacing:-0.02em;">Wear Your</div>
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:56px;color:#d4af37;letter-spacing:-0.02em;margin-top:8px;">Story</div>
+  </div>
+
+  <!-- Coordinates text -->
+  <div id="coords-06" style="position:absolute;top:1140px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'RM Neue',serif;font-style:italic;font-weight:300;font-size:22px;color:#bfa265;letter-spacing:0.04em;text-shadow:0 0 15px rgba(212,175,55,0.2);">40.7128&#176; N &nbsp; 74.0060&#176; W</div>
+  </div>
+
+  <!-- Accent lines -->
+  <div id="accent-left-06" style="position:absolute;top:1200px;left:100px;width:150px;height:1px;background:linear-gradient(90deg, transparent, #d4af37);z-index:5;opacity:0;transform:scaleX(0);transform-origin:left;"></div>
+  <div id="accent-right-06" style="position:absolute;top:1200px;right:100px;width:150px;height:1px;background:linear-gradient(270deg, transparent, #d4af37);z-index:5;opacity:0;transform:scaleX(0);transform-origin:right;"></div>
+
+  <!-- Bottom caption -->
+  <div id="caption-06" style="position:absolute;bottom:280px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'Inter',sans-serif;font-weight:300;font-size:17px;color:#b8b0a4;letter-spacing:0.01em;">Every coordinate tells your story</div>
+  </div>
+
+  <!-- Floating particles -->
+  <canvas id="particles-06" width="1080" height="1920" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:3;pointer-events:none;"></canvas>
+
+  <style>
+    @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+    @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf') format('truetype'); font-weight: 300; font-style: normal; }
+    @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; }
+  </style>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    window.__timelines["scene-06-wrist"] = tl;
+
+    // Particles
+    var canvas = document.getElementById("particles-06");
+    var ctx = canvas.getContext("2d");
+    function hashP6(x, y) { var n = x * 374761393 + y * 668265263; n = (n ^ (n >> 13)) * 1274126177; return ((n ^ (n >> 16)) & 0x7fffffff) / 0x7fffffff; }
+    function drawP6(t) {
+      ctx.clearRect(0, 0, 1080, 1920);
+      for (var i = 0; i < 25; i++) {
+        var px = hashP6(i, 0) * 1080;
+        var py = (hashP6(i, 1) * 1920 + t * 18) % 1920;
+        var alpha = 0.1 + hashP6(i, 2) * 0.25;
+        ctx.beginPath();
+        ctx.arc(px, py, 1.5, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(212,175,55," + alpha + ")";
+        ctx.fill();
+      }
+    }
+    var proxy06 = { time: 0 };
+    tl.to(proxy06, { time: 3.5, duration: 3.5, ease: "none", onUpdate: function() { drawP6(proxy06.time); } }, 0);
+
+    // Glow entrance
+    tl.fromTo("#glow-06", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1.1, duration: 2.0, ease: "sine.inOut" }, 0.1);
+
+    // Main text
+    tl.fromTo("#text-main-06", { opacity: 0, y: -30 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 0.2);
+
+    // Product frame
+    tl.fromTo("#product-frame-06", { opacity: 0, y: 40, scale: 0.93 }, { opacity: 1, y: 0, scale: 1, duration: 1.0, ease: "power3.out" }, 0.4);
+
+    // Ken Burns on product
+    tl.fromTo("#product-inner-06", { scale: 1.02 }, { scale: 1.12, duration: 3.5, ease: "sine.inOut" }, 0.3);
+
+    // Shimmer sweep
+    tl.fromTo("#shimmer-06", { left: "-100%" }, { left: "200%", duration: 2.2, ease: "power1.inOut" }, 1.0);
+
+    // Parallax depth layer drift
+    tl.fromTo("#depth-layer-06", { x: 0, y: 0 }, { x: 15, y: -10, duration: 3.5, ease: "sine.inOut" }, 0);
+
+    // Coordinates text
+    tl.fromTo("#coords-06", { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 1.0);
+
+    // Accent lines
+    tl.fromTo("#accent-left-06", { opacity: 0, scaleX: 0 }, { opacity: 1, scaleX: 1, duration: 0.6, ease: "power2.out" }, 1.3);
+    tl.fromTo("#accent-right-06", { opacity: 0, scaleX: 0 }, { opacity: 1, scaleX: 1, duration: 0.6, ease: "power2.out" }, 1.3);
+
+    // Caption
+    tl.fromTo("#caption-06", { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.5, ease: "power1.out" }, 1.8);
+  </script>
+</div>
+</template>

@@ -1,0 +1,103 @@
+<template>
+<div id="scene-05" data-composition-id="scene-05-unboxing" style="position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0a0a;" data-width="1080" data-height="1920">
+
+  <!-- Background radial glow -->
+  <div id="glow-05" style="position:absolute;top:50%;left:50%;width:1000px;height:1000px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse at center, rgba(212,175,55,0.12) 0%, transparent 70%);z-index:1;opacity:0;"></div>
+
+  <!-- Celebration particles canvas -->
+  <canvas id="particles-05" width="1080" height="1920" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:15;pointer-events:none;"></canvas>
+
+  <!-- Top text -->
+  <div id="text-top-05" style="position:absolute;top:260px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:42px;color:#f5f0e8;letter-spacing:-0.02em;line-height:1.3;">A Moment of<br><span style="color:#d4af37;">Pure Joy</span></div>
+  </div>
+
+  <!-- 3D card reveal -->
+  <div id="card-stage" style="position:absolute;top:500px;left:50%;transform:translateX(-50%);width:640px;height:640px;perspective:900px;z-index:10;">
+    <div id="card-3d" style="width:100%;height:100%;transform-style:preserve-3d;border-radius:20px;overflow:hidden;">
+      <!-- Front face - product image -->
+      <div style="position:absolute;inset:0;backface-visibility:hidden;border-radius:20px;overflow:hidden;border:2px solid rgba(212,175,55,0.3);">
+        <img src="capture/assets/img-9343-1500x.jpg" style="width:100%;height:100%;object-fit:cover;" />
+        <!-- Gold overlay bottom -->
+        <div style="position:absolute;bottom:0;left:0;right:0;height:150px;background:linear-gradient(to top, rgba(10,10,10,0.7), transparent);"></div>
+        <!-- Product label -->
+        <div style="position:absolute;bottom:24px;left:24px;font-family:'RM Neue',serif;font-style:italic;font-size:18px;color:#d4af37;letter-spacing:0.04em;">Coordinates Bracelet</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gold ring accent -->
+  <div id="ring-05" style="position:absolute;top:780px;left:50%;transform:translateX(-50%);width:120px;height:120px;border:2px solid rgba(212,175,55,0.2);border-radius:50%;z-index:5;opacity:0;"></div>
+
+  <!-- Bottom text -->
+  <div id="text-bottom-05" style="position:absolute;bottom:280px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;opacity:0;">
+    <div style="font-family:'Inter',sans-serif;font-weight:300;font-size:18px;color:#b8b0a4;letter-spacing:0.01em;">Your special place, forever close</div>
+  </div>
+
+  <!-- Decorative dots -->
+  <div id="dots-05" style="position:absolute;bottom:230px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:10;opacity:0;">
+    <div style="width:5px;height:5px;border-radius:50%;background:#d4af37;"></div>
+    <div style="width:5px;height:5px;border-radius:50%;background:#bfa265;"></div>
+    <div style="width:5px;height:5px;border-radius:50%;background:#d4af37;"></div>
+  </div>
+
+  <style>
+    @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+    @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf') format('truetype'); font-weight: 300; font-style: normal; }
+    @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; }
+  </style>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    window.__timelines["scene-05-unboxing"] = tl;
+
+    // Glow entrance
+    tl.fromTo("#glow-05", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1.2, duration: 2.4, ease: "sine.inOut" }, 0.1);
+
+    // Top text
+    tl.fromTo("#text-top-05", { opacity: 0, y: -25 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 0.2);
+
+    // 3D Card flip reveal
+    tl.fromTo("#card-3d", { rotationY: -90, opacity: 0 }, { rotationY: 0, opacity: 1, duration: 1.4, ease: "power3.out" }, 0.6);
+
+    // Ring accent
+    tl.fromTo("#ring-05", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.8, ease: "back.out(1.5)" }, 1.2);
+
+    // Celebration particles
+    var canvas = document.getElementById("particles-05");
+    var ctx = canvas.getContext("2d");
+    function hashP5(x, y) { var n = x * 374761393 + y * 668265263; n = (n ^ (n >> 13)) * 1274126177; return ((n ^ (n >> 16)) & 0x7fffffff) / 0x7fffffff; }
+    function drawCelebration(t) {
+      ctx.clearRect(0, 0, 1080, 1920);
+      if (t < 0.5) return;
+      var burstT = (t - 0.5) * 2;
+      for (var i = 0; i < 40; i++) {
+        var angle = hashP5(i, 0) * Math.PI * 2;
+        var dist = burstT * (100 + hashP5(i, 1) * 300);
+        var px = 540 + Math.cos(angle) * dist;
+        var py = 820 + Math.sin(angle) * dist;
+        var alpha = Math.max(0, 0.8 - burstT * 0.4);
+        var size = 2 + hashP5(i, 2) * 3;
+        if (px < 0 || px > 1080 || py < 0 || py > 1920) continue;
+        ctx.beginPath();
+        ctx.arc(px, py, size, 0, Math.PI * 2);
+        var hue = hashP5(i, 3) > 0.5 ? "212,175,55" : "191,162,101";
+        ctx.fillStyle = "rgba(" + hue + "," + alpha + ")";
+        ctx.fill();
+      }
+    }
+    var proxy05 = { time: 0 };
+    tl.to(proxy05, { time: 4, duration: 4, ease: "none", onUpdate: function() { drawCelebration(proxy05.time); } }, 0);
+
+    // Bottom text
+    tl.fromTo("#text-bottom-05", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power1.out" }, 1.8);
+
+    // Dots
+    tl.fromTo("#dots-05", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 2.2);
+
+    // Glow pulse
+    tl.to("#glow-05", { scale: 1.4, opacity: 0.8, duration: 1.5, ease: "sine.inOut" }, 2.6);
+  </script>
+</div>
+</template>
