@@ -1,11 +1,5 @@
 {
-  "id": "ourcoordinates-promo",
-  "title": "OurCoordinates - Wear Your Favorite Places",
-  "duration": 15,
-  "dimensions": {
-    "width": 1080,
-    "height": 1920
-  },
-  "fps": 30,
-  "description": "Cinematic promo showcasing personalized coordinates jewelry with GPS engraving"
+  "id": "my-video",
+  "name": "my-video",
+  "createdAt": "2026-06-10T17:19:44.276Z"
 }

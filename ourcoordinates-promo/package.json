@@ -1,6 +1,11 @@
 {
-  "name": "ourcoordinates-promo",
-  "version": "1.0.0",
+  "name": "my-video",
   "private": true,
-  "description": "Cinematic promo video for OurCoordinates personalized coordinates jewelry"
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.88 preview",
+    "check": "npx --yes hyperframes@0.6.88 lint && npx --yes hyperframes@0.6.88 validate && npx --yes hyperframes@0.6.88 inspect",
+    "render": "npx --yes hyperframes@0.6.88 render",
+    "publish": "npx --yes hyperframes@0.6.88 publish"
+  }
 }
