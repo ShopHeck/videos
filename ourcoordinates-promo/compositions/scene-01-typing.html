@@ -93,16 +93,14 @@
     // Cursor blink
     tl.fromTo("#cursor-01", { opacity: 1 }, { opacity: 0, duration: 0.4, yoyo: true, repeat: 10, ease: "steps(1)" }, 0.5);
 
-    // Typing animation
+    // Typing animation (proxy-driven for deterministic seek-based rendering)
     var CMD = "Central Park, New York";
     var typed = document.getElementById("typed-text");
-    var typeDuration = 2.0;
-    var typeStart = 1.2;
-    for (var i = 0; i < CMD.length; i++) {
-      (function(idx) {
-        tl.call(function() { typed.textContent = CMD.substring(0, idx + 1); }, null, typeStart + (idx / CMD.length) * typeDuration);
-      })(i);
-    }
+    var typeProxy = { progress: 0 };
+    tl.fromTo(typeProxy, { progress: 0 }, { progress: 1, duration: 2.0, ease: "none", onUpdate: function() {
+      var charCount = Math.floor(typeProxy.progress * CMD.length);
+      typed.textContent = CMD.substring(0, charCount);
+    }}, 1.2);
 
     // Coordinates result reveal
     tl.fromTo("#coords-result", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 3.4);
