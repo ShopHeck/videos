@@ -1,0 +1,243 @@
+{
+  "files": [
+    {
+      "file": "RMNeue-BoldItalic.woff",
+      "family": "RM Neue",
+      "rawFamily": "RM Neue",
+      "subfamily": "Bold Italic",
+      "postscript": "RMNeue-BoldItalic",
+      "weight": 700,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "RMNeue-BoldItalic.woff2",
+      "family": "RM Neue",
+      "rawFamily": "RM Neue",
+      "subfamily": "Bold Italic",
+      "postscript": "RMNeue-BoldItalic",
+      "weight": 700,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "RMNeue-LightItalic.woff",
+      "family": "RM Neue",
+      "rawFamily": "RM Neue Light",
+      "subfamily": "Italic",
+      "postscript": "RMNeue-LightItalic",
+      "weight": 300,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "RMNeue-LightItalic.woff2",
+      "family": "RM Neue",
+      "rawFamily": "RM Neue Light",
+      "subfamily": "Italic",
+      "postscript": "RMNeue-LightItalic",
+      "weight": 300,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "RMNeue-SemiBoldItalic.woff",
+      "family": "RM Neue",
+      "rawFamily": "RM Neue SemiBold",
+      "subfamily": "Italic",
+      "postscript": "RMNeue-SemiBoldItalic",
+      "weight": 600,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "RMNeue-SemiBoldItalic.woff2",
+      "family": "RM Neue",
+      "rawFamily": "RM Neue SemiBold",
+      "subfamily": "Italic",
+      "postscript": "RMNeue-SemiBoldItalic",
+      "weight": 600,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf",
+      "family": "Inter",
+      "rawFamily": "Inter SemiBold",
+      "subfamily": "Regular",
+      "postscript": "Inter-SemiBold",
+      "weight": 600,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf",
+      "family": "Inter",
+      "rawFamily": "Inter Medium",
+      "subfamily": "Regular",
+      "postscript": "Inter-Medium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf",
+      "family": "Inter",
+      "rawFamily": "Inter",
+      "subfamily": "Regular",
+      "postscript": "Inter-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf",
+      "family": "Inter",
+      "rawFamily": "Inter Light",
+      "subfamily": "Regular",
+      "postscript": "Inter-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_gGUbtY.ttf",
+      "family": "Playfair Display",
+      "rawFamily": "Playfair Display Black",
+      "subfamily": "Italic",
+      "postscript": "PlayfairDisplay-BlackItalic",
+      "weight": 900,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_iiUbtY.ttf",
+      "family": "Playfair Display",
+      "rawFamily": "Playfair Display ExtraBold",
+      "subfamily": "Italic",
+      "postscript": "PlayfairDisplay-ExtraBoldItalic",
+      "weight": 800,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf",
+      "family": "Playfair Display",
+      "rawFamily": "Playfair Display",
+      "subfamily": "Bold Italic",
+      "postscript": "PlayfairDisplay-BoldItalic",
+      "weight": 700,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_naUbtY.ttf",
+      "family": "Playfair Display",
+      "rawFamily": "Playfair Display SemiBold",
+      "subfamily": "Italic",
+      "postscript": "PlayfairDisplay-SemiBoldItalic",
+      "weight": 600,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_pqTbtY.ttf",
+      "family": "Playfair Display",
+      "rawFamily": "Playfair Display Medium",
+      "subfamily": "Italic",
+      "postscript": "PlayfairDisplay-MediumItalic",
+      "weight": 500,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    },
+    {
+      "file": "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf",
+      "family": "Playfair Display",
+      "rawFamily": "Playfair Display",
+      "subfamily": "Italic",
+      "postscript": "PlayfairDisplay-Italic",
+      "weight": 400,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true
+    }
+  ],
+  "families": [
+    {
+      "family": "Inter",
+      "weights": [
+        300,
+        400,
+        500,
+        600
+      ],
+      "variable": false,
+      "fileCount": 4,
+      "files": [
+        "UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf",
+        "UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf",
+        "UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf",
+        "UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf"
+      ]
+    },
+    {
+      "family": "Playfair Display",
+      "weights": [
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "variable": false,
+      "fileCount": 6,
+      "files": [
+        "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_gGUbtY.ttf",
+        "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_iiUbtY.ttf",
+        "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf",
+        "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_naUbtY.ttf",
+        "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_pqTbtY.ttf",
+        "nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf"
+      ]
+    },
+    {
+      "family": "RM Neue",
+      "weights": [
+        300,
+        600,
+        700
+      ],
+      "variable": false,
+      "fileCount": 6,
+      "files": [
+        "RMNeue-BoldItalic.woff",
+        "RMNeue-BoldItalic.woff2",
+        "RMNeue-LightItalic.woff",
+        "RMNeue-LightItalic.woff2",
+        "RMNeue-SemiBoldItalic.woff",
+        "RMNeue-SemiBoldItalic.woff2"
+      ]
+    }
+  ],
+  "unidentified": [],
+  "meta": {
+    "generatedAt": "2026-06-10T16:34:58.212Z",
+    "tool": "fontkit"
+  }
+}

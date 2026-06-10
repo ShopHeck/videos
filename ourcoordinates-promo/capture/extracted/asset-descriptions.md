@@ -1,0 +1,77 @@
+# Asset Descriptions
+
+One line per file. Read this instead of opening every image individually.
+
+- 247-support-ourcoordinates.svg — 4KB, 247 support ourcoordinates
+- 2e40d462-2602-4c27-a2bc-208220c60fa0.jpeg — 49KB, "Silver cuff bracelet engraved with the words Have Courage And Be Kind From OurCo", above fold
+- coordinates-jewelry-collection-443934-15.jpg — 127KB, section: "The PERFECT GIFT FOR MOM"
+- favicon.png — 2KB, favicon
+- free-custom-engraving.jpg — 33KB, free custom engraving
+- gift-box-animation.gif — 54KB, gift box animation
+- hero-12.jpg — 10KB, hero 12
+- hero-13.jpg — 16KB, hero 13
+- hero-14.jpg — 12KB, hero 14
+- hero-15.jpg — 10KB, hero 15
+- image-10.jpg — 31KB, image 10
+- image-7.jpg — 35KB, image 7
+- image-8.jpg — 25KB, image 8
+- image-9.jpg — 19KB, image 9
+- img-9343-1000x.jpg — 140KB, img 9343 1000x
+- img-9343-1500x.jpg — 234KB, img 9343 1500x
+- img-9343-750x768-crop-center.jpg — 134KB, img 9343 750x768 crop center
+- made-in-the-usa-ourcoordinates.svg — 6KB, made in the usa ourcoordinates
+- mens-jewelry-657895-1500x.jpg — 323KB, mens jewelry 657895 1500x
+- og-image.jpg — 61KB, og image
+- ourcoordinates-logo-image-our-coordinate.png — 12KB, ourcoordinates logo image our coordinate
+- personalized-jewelry-for-wanderers.jpg — 266KB, personalized jewelry for wanderers
+- review-picture.jpeg — 10KB, review picture
+- secure-payments-ourcoordinates.svg — 3KB, secure payments ourcoordinates
+- the-perfect-gift-for-mom.jpg — 51KB, the perfect gift for mom
+- u5c9cfe902eb54c04832d6bc784650dd8m.jpg — 19KB, u5c9cfe902eb54c04832d6bc784650dd8m
+- u89994be3422f4b9b8ecbf1845b8a4cf7m.jpg — 40KB, u89994be3422f4b9b8ecbf1845b8a4cf7m
+- u8db5399e838f4386a5ac304a8c8d2788j.jpg — 35KB, u8db5399e838f4386a5ac304a8c8d2788j
+- u8f10d1619e014c5da919318b724e2cc1c.jpg — 28KB, u8f10d1619e014c5da919318b724e2cc1c
+- ub2243457c6ef4a43aa4980f663cfddcb2.jpg — 40KB, ub2243457c6ef4a43aa4980f663cfddcb2
+- ub51f7c343af34c9aa19e2896b00463f7r.jpg — 32KB, ub51f7c343af34c9aa19e2896b00463f7r
+- ub8d151c1a5f14325bc6be37ed18635c0f.jpg — 175KB, ub8d151c1a5f14325bc6be37ed18635c0f
+- ud2ea0e35df9246819202fc52fa779ca6x.jpg — 94KB, ud2ea0e35df9246819202fc52fa779ca6x
+- ufa4ecff0929e458d9dd9028100804c3ea.jpg — 100KB, ufa4ecff0929e458d9dd9028100804c3ea
+- user-picture.jpg — 36KB, user picture
+- verified-reviews-ourcoordinates.svg — 5KB, verified reviews ourcoordinates
+- svgs/icon-10.svg — icon: Icon
+- svgs/icon-11.svg — icon: Icon
+- svgs/icon-12.svg — icon: Icon
+- svgs/icon-13.svg — icon: Icon
+- svgs/icon-14.svg — icon: Icon
+- svgs/icon-15.svg — icon: Icon
+- svgs/icon-16.svg — icon: Icon
+- svgs/icon-17.svg — icon: Icon
+- svgs/icon-18.svg — icon: Icon
+- svgs/icon-19.svg — icon: Icon
+- svgs/icon-2.svg — icon: Icon
+- svgs/icon-20.svg — icon: Icon
+- svgs/icon-3.svg — icon: Icon
+- svgs/icon-4.svg — icon: Icon
+- svgs/icon-5.svg — icon: Icon
+- svgs/icon-6.svg — icon: Icon
+- svgs/icon-7.svg — icon: Icon
+- svgs/icon-8.svg — icon: Icon
+- svgs/icon-9.svg — icon: Icon
+- svgs/icon.svg — icon: Icon
+- svgs/needsclick.svg — icon: needsclick
+- fonts/RMNeue-BoldItalic.woff — font file
+- fonts/RMNeue-BoldItalic.woff2 — font file
+- fonts/RMNeue-LightItalic.woff — font file
+- fonts/RMNeue-LightItalic.woff2 — font file
+- fonts/RMNeue-SemiBoldItalic.woff — font file
+- fonts/RMNeue-SemiBoldItalic.woff2 — font file
+- fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf — font file
+- fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf — font file
+- fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf — font file
+- fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf — font file
+- fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_gGUbtY.ttf — font file
+- fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_iiUbtY.ttf — font file
+- fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf — font file
+- fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_naUbtY.ttf — font file
+- fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_pqTbtY.ttf — font file
+- fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf — font file

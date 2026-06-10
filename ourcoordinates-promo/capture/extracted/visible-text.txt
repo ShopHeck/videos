@@ -1,0 +1,369 @@
+[a] Skip to content
+[button] FEATURED COLLECTIONS
+[a] Coordinates Collection
+[a] Mother's Day Gifts
+[a] Gold Jewelry
+[a] Best Sellers
+[button] Necklaces
+[a] Couples Necklaces
+[button] Bracelets
+[a] Forever Bracelets
+[a] Mens Rings
+[a] Jewelry Cleaning & Care
+[a] BUY 1 GET 1 FREE + FREE SHIPPING!
+[a] Travel & Fashion Blog
+[a] About Us
+[a] Contact Us
+[span] Contact Us
+[a] GIFT GUIDE
+[option] AED
+[option] AFN
+[option] ALL
+[option] AMD
+[option] ANG
+[option] AUD
+[option] AWG
+[option] AZN
+[option] BAM
+[option] BBD
+[option] BDT
+[option] BIF
+[option] BND
+[option] BOB
+[option] BSD
+[option] BWP
+[option] BZD
+[option] CAD
+[option] CDF
+[option] CHF
+[option] CNY
+[option] CRC
+[option] CVE
+[option] CZK
+[option] DJF
+[option] DKK
+[option] DOP
+[option] DZD
+[option] EGP
+[option] ETB
+[option] EUR
+[option] FJD
+[option] FKP
+[option] GBP
+[option] GMD
+[option] GNF
+[option] GTQ
+[option] GYD
+[option] HKD
+[option] HNL
+[option] HUF
+[option] IDR
+[option] ILS
+[option] INR
+[option] ISK
+[option] JMD
+[option] JPY
+[option] KES
+[option] KGS
+[option] KHR
+[option] KMF
+[option] KRW
+[option] KYD
+[option] KZT
+[option] LAK
+[option] LBP
+[option] LKR
+[option] MAD
+[option] MDL
+[option] MKD
+[option] MMK
+[option] MNT
+[option] MOP
+[option] MUR
+[option] MVR
+[option] MWK
+[option] MYR
+[option] NGN
+[option] NIO
+[option] NPR
+[option] NZD
+[option] PEN
+[option] PGK
+[option] PHP
+[option] PKR
+[option] PLN
+[option] PYG
+[option] QAR
+[option] RON
+[option] RSD
+[option] RWF
+[option] SAR
+[option] SBD
+[option] SEK
+[option] SGD
+[option] SHP
+[option] SLL
+[option] STD
+[option] THB
+[option] TJS
+[option] TOP
+[option] TTD
+[option] TWD
+[option] TZS
+[option] UAH
+[option] UGX
+[option] USD
+[option] UYU
+[option] UZS
+[option] VND
+[option] VUV
+[option] WST
+[option] XAF
+[option] XCD
+[option] XOF
+[option] XPF
+[option] YER
+[h2] FREE CUSTOM ENGRAVING
+[h1] WEAR YOUR FAVORITE PLACES
+[strong] SHOP NOW
+[p] Made In USA
+[p] Secure Payment
+[p] 24/7 Support
+[p] Verified Reviews
+[h3] Best Sellers
+[h2] TRENDING JEWELRY THIS WEEK
+[a] Custom Coordinates Necklace
+[span] $89.99
+[span] On sale
+[a] Coordinates Cuff Bracelet
+[span] $42
+[span] $50
+[span] Sold out
+[a] Mama Bear Necklace With Birthstone Mothers' Day Gift
+[span] $34.99
+[span] On sale
+[a] Magnetic Bead Bracelets - Set of 2
+[span] $35
+[span] $50
+[span] On sale
+[a] Mens Wolf Ring - Hand Crafted Stainless Steel
+[span] $32
+[span] $40
+[a] 2 Magnetic Lover Bracelets For Couples
+[span] $25
+[span] On sale
+[a] Personalized Chain Link Coordinates Bracelet
+[span] $33
+[span] $40
+[span] Sold out
+[a] Dainty Mama Necklace
+[span] $32
+[span] $40
+[span] On sale
+[a] Heart Lock Bracelet & Key Necklace Jewelry Set
+[span] $38
+[span] $57
+[span] Sold out
+[a] Magnetic Heart Necklace - Set Of 2
+[span] $34.99
+[span] $40
+[span] Sold out
+[a] Custom Vertical Name Necklace – Personalized Gold, Silver & Rose Gold
+[span] $33
+[span] $42
+[span] On sale
+[a] Luxury Copper Two-Tone Wolf Ring
+[span] $27
+[span] $34
+[span] On sale
+[a] Personalized Love Letter Necklace w/ Rose Gift Box
+[span] $49.99
+[span] $65
+[span] Sold out
+[a] Dainty Horizontal Name Necklace
+[span] $45
+[span] $54
+[span] On sale
+[a] Personalized Padlock Necklace – Custom Engraved Lock Pendant
+[span] $42
+[span] $58
+[span] Sold out
+[a] Dainty Compass Bracelet
+[span] $19
+[span] On sale
+[a] Custom Initial Necklace for Men - Thick Vertical Bar Pendant
+[span] $54.99
+[span] $70
+[span] On sale
+[a] HOPE Bracelet - Breast Cancer Awareness Month
+[span] $15
+[span] $19
+[span] On sale
+[a] Cut Out Nameplate Necklace – Personalized Custom Name Jewelry
+[span] $37
+[span] $45
+[span] Sold out
+[a] Custom Bar Necklace – Personalized Engraved 4-Sided Pendant
+[span] $48
+[span] $59.99
+[span] Sold out
+[a] AAA Cubic Zirconia Stones Gold-plated Brass CZ Lock Letter A-Z Pendant Necklace
+[span] $32.99
+[span] $40
+[span] Sold out
+[a] 925 Sterling Silver Airplane Pendant Necklace For Women
+[span] $44.99
+[span] $60
+[span] On sale
+[a] 925 Sterling Silver Luminous CZ Cute Mini Airplane Bracelet
+[span] $44.99
+[span] $60
+[span] Sold out
+[a] Personalized Chain Link Necklace with Custom Charms – Gold, Silver & Rose Gold
+[span] $54.99
+[span] $70
+[span] On sale
+[a] Flat Bar Coordinates Choker Style Necklace
+[span] $39.99
+[span] $50
+[span] Sold out
+[a] Custom Engraved Rustic Steel Necklace for Men
+[span] $42.99
+[span] $54
+[span] Sold out
+[a] Custom 3D Bubble Letter Necklace With Rose Box Valentines Day Gift
+[span] $44.95
+[span] $60
+[span] On sale
+[a] Galaxy Signet Ring
+[span] $34.95
+[span] $44
+[h3] The PERFECT GIFT FOR MOM
+[h2] MOTHERS DAY SPECIALS
+[a] SHOP NOW
+[h3] ENGRAVE YOUR FAVORITE LOCATIONS
+[h2] COORDINATES JEWELRY
+[a] SHOP NOW
+[h3] HAND PICKED
+[h2] JEWELRY FOR MEN
+[a] SHOP NOW
+[h3] ⭐⭐⭐⭐⭐
+[h2] Verified Customer Review
+[p] "I Recently personalized a set of Matching Necklaces from OurCoordinates! My husband and I
+[strong] love them
+[p] . They have the
+[strong] coordinates where we did our first trip together
+[p] . Incredibly Affordable. Thank you very much!'' -  Lucy (US)
+[a] Shop Coordinate Necklaces
+[h3] A Bond That Lasts A Lifetime
+[h2] FOREVER BRACELETS
+[span] On sale
+[a] Genuine Leather Coordinate Bracelet
+[span] $47
+[span] $59
+[span] On sale
+[a] Coordinates Cuff Bracelet
+[span] $42
+[span] $50
+[span] On sale
+[a] Magnetic Couple Bracelets - Set Of Two
+[span] $20
+[span] $25
+[span] On sale
+[a] Magnetic Bead Bracelets - Set of 2
+[span] $35
+[span] $50
+[a] 2 Magnetic Lover Bracelets For Couples
+[span] $25
+[span] Sold out
+[a] Dainty Compass Bracelet
+[span] $19
+[span] On sale
+[a] HOPE Bracelet - Breast Cancer Awareness Month
+[span] $15
+[span] $19
+[span] On sale
+[a] 925 Sterling Silver Luminous CZ Cute Mini Airplane Bracelet
+[span] $44.99
+[span] $60
+[span] On sale
+[a] Personalized Chain Link Coordinates Bracelet
+[span] $33
+[span] $40
+[h2] Fashion & Travel Guides
+[h2] Read Our Blog
+[a] How to Find Coordinates in 2026: The Complete Guide to Latitude & Longitude
+[p] Finding coordinates is easier than you think. Learn 4 ways to find latitude and longitude for any location in 2026 — with step-by-step instructions...
+[a] Read more
+[a] Matching Couples Jewelry 2026: The Complete Guide to Coordinates Sets
+[p] Matching couples jewelry is more than a trend — it's a private language. Discover the best matching coordinates jewelry for couples in 2026, from m...
+[a] Read more
+[a] Memorial Jewelry 2026: How to Honor a Loved One with Coordinates
+[p] Memorial jewelry helps keep loved ones close. Learn how coordinates jewelry preserves the memory of someone special — with respectful engraving ide...
+[a] Read more
+[a] View all articles
+[h3] PERSONALIZED JEWELRY FOR WANDERERS
+[em] OurCoordinates
+[p] is a US-Based Small Business that Makes it Easy for You to Design and Purchase Custom Jewelry in Just a Few Simple Steps.
+[p] Take a Second to Close Your Eyes and Image Your Favorite Place in the Entire World, a Place of Pure Joy. That is the Inspiration Behind Creating Your Own Custom Coordinates Jewelry!
+[a] About OurCoordinates
+[h3] Made by us, Shared by you!
+[div] Tag @OurCoordinates to see your picture featured
+[a] Load More
+[a] Customers rate us 4.5/5 based on 84 reviews.
+[h2] Subscribe For Exclusive Offers
+[button] Subscribe
+[h2] Useful Links
+[a] Verified Customer Reviews
+[a] Terms of Service
+[a] Shipping Policy
+[a] Privacy Policy
+[a] Return Policy
+[a] Jewelry Stores in Saint Petersburg
+[a] Do not sell my personal information
+[h2] THANK YOU!
+[p] Our Customers Are The Heart and Soul Of Our Business. We Are Honored to Be Your Choice When It Comes to Personalized Jewelry. As a
+[p] Established Small Business, We Work Hard Every Day to Provide You With the Best Products and Best Customer Service Experience As We Can. We are Avid Travel Lovers Ourselves and That's The Spirit of OurCoordinates.
+[a] © OurCoordinates
+[span] I Love OurCoordinates Store!
+[p] OurCoordinates has been our go to small business anytime we need a new necklace or bracelet! The personalization is always on point and any time I have any issues they fix them asap! Highly recommend you check out this neat little shop! 5 Stars From Me!
+[div] OurCoordinates
+[p] WoW! Really beautiful, more beautiful live than in the picture! Newly purchased the seller I contacted immediately and I to helped in composing the bracelet, I had pure wrong a letter and seller is accorto ( menomale ) ! I 'd say excellent communication! Once ready bracelet seller you send photos for your confirmation once date confirming the seller send out! And the shipment was very fast! Seller stra recommended. I took the largest measurement and I go perfect (I have the 17,5cm) ricomprerò again from this seller! And super top!
+[div] Personalized Sliding Diamond Charm Bracelet
+[p] Well I like it beautiful and since it came out it came fast Precioso me gusta mucho
+[div] Custom Birthstone Ring – Personalized Name Ring with Gemstone
+[p] I love the necklace, thank you
+[div] 18K Gold Square Pendant Necklace | ALWAYS
+[p] The bracelet is beautiful, only the pendant with the letter probably had to be hung in a knot, remade, otherwise it always slides to the opposite side. Remade, the keychain with the letter has moved inside the knot on the bracelet, so much better! Otherwise, the keychain with the letter is always on the back of the bracelet.
+[div] Knot Cuff Bracelet With Letter Charm
+[span] 08/13/2021
+[span] Cooper VonRueden
+[p] WoW! Really beautiful, more beautiful live than in the picture! Newly purchased the seller I contacted immediately and I to helped in composing the bracelet, I had pure wrong a letter and seller is accorto ( menomale ) ! I 'd say excellent communication! Once ready bracelet seller you send photos for your confirmation once date confirming the seller send out! And the shipment was very fast! Seller stra recommended. I took the largest measurement and I go perfect (I have the 17,5cm) ricomprerò again from this seller! And super top!
+[span] 05/20/2021
+[span] Izabella Robel
+[p] I love the necklace, thank you
+[span] 05/02/2021
+[span] Albina Durgan
+[p] The bracelet is beautiful, only the pendant with the letter probably had to be hung in a knot, remade, otherwise it always slides to the opposite side. Remade, the keychain with the letter has moved inside the knot on the bracelet, so much better! Otherwise, the keychain with the letter is always on the back of the bracelet.
+[span] 01/13/2023
+[span] M.H.
+[b] I Love OurCoordinates Store!
+[p] OurCoordinates has been our go to small business anytime we need a new necklace or bracelet! The personalization is always on point and any time I have any issues they fix them asap! Highly recommend you check out this neat little shop! 5 Stars From Me!
+[div] NPS score:
+[div] 0 (Not at all likely)
+[div] 10 (Extremely likely)
+[div] What We Do Well:
+[span] Fast shipping. Friendly service. Quality products
+[div] What We Can Do Better:
+[span] Send me more
+[p] Thank you so much for your kind words and for choosing OurCoordinates as your go-to small business for personalized jewelry. We are thrilled to hear that our products and customer service have met your expectations. We truly appreciate your recommendation and look forward to serving you again in the future. Have a wonderful day!
+[span] 05/21/2021
+[span] Antonette Kub
+[p] Well I like it beautiful and since it came out it came fast Precioso me gusta mucho
+[title] Close dialog
+[span] 20% OFF
+[span] YOUR FIRST ORDER
+[span] Get exclusive offers on sign up
+[button] GET OFFER
+[span] By signing up, you agree to receive email marketing
+[button] No, thanks

@@ -1,0 +1,188 @@
+{
+  "typography": [
+    {
+      "role": "display",
+      "fontFamily": "Playfair Display",
+      "fontSize": "52px",
+      "fontWeight": "400",
+      "lineHeight": "57.2px",
+      "letterSpacing": "-1.04px",
+      "color": "#FFFFFF",
+      "sampleText": "WEAR YOUR FAVORITE PLACES"
+    },
+    {
+      "role": "body",
+      "fontFamily": "Inter",
+      "fontSize": "20.8px",
+      "fontWeight": "300",
+      "lineHeight": "35.36px",
+      "letterSpacing": "0.208px",
+      "color": "#1A1A1A",
+      "sampleText": "Made In USA"
+    },
+    {
+      "role": "heading",
+      "fontFamily": "Playfair Display",
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "lineHeight": "16.5px",
+      "letterSpacing": "normal",
+      "color": "#000000",
+      "sampleText": "Custom Coordinates Necklace"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "Inter",
+      "fontSize": "11px",
+      "fontWeight": "500",
+      "lineHeight": "12.1px",
+      "letterSpacing": "1.1px",
+      "color": "#FFFFFF",
+      "sampleText": "FREE CUSTOM ENGRAVING"
+    },
+    {
+      "role": "label",
+      "fontFamily": "Inter",
+      "fontSize": "11px",
+      "fontWeight": "300",
+      "lineHeight": "18.7px",
+      "letterSpacing": "0.208px",
+      "color": "#1A1A1A",
+      "sampleText": ""
+    }
+  ],
+  "spacing": {
+    "observed": [
+      4,
+      6,
+      8,
+      13,
+      15,
+      16,
+      18,
+      20,
+      21,
+      25,
+      32
+    ],
+    "baseUnit": 4
+  },
+  "radius": [
+    "8px"
+  ],
+  "shadows": [
+    {
+      "value": "rgba(54, 54, 54, 0.15) 0px 2px 10px 0px",
+      "count": 4
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.15) 0px 0px 15.8px 0px",
+      "count": 2
+    },
+    {
+      "value": "rgb(228, 223, 235) 0px -1px 0px 0px inset",
+      "count": 1
+    }
+  ],
+  "buttons": [
+    {
+      "label": "button",
+      "background": "#FFFFFF",
+      "color": "#4B2C7B",
+      "padding": "0px",
+      "borderRadius": "50%",
+      "border": "0px none rgb(75, 44, 123)",
+      "boxShadow": "rgba(54, 54, 54, 0.15) 0px 2px 10px 0px",
+      "fontSize": "20.8px",
+      "fontWeight": "300",
+      "height": "45px"
+    },
+    {
+      "label": "Load More",
+      "background": "#FFFFFF",
+      "color": "#7105C9",
+      "padding": "10px 40px",
+      "borderRadius": "25px",
+      "border": "2px solid rgb(113, 5, 201)",
+      "boxShadow": "none",
+      "fontSize": "20.8px",
+      "fontWeight": "300",
+      "height": "44.7969px"
+    },
+    {
+      "label": "Subscribe",
+      "background": "#0A0A0A",
+      "color": "#F5F0E8",
+      "padding": "16px 36px",
+      "borderRadius": "0px",
+      "border": "1px solid rgb(10, 10, 10)",
+      "boxShadow": "none",
+      "fontSize": "11px",
+      "fontWeight": "500",
+      "height": "48px"
+    },
+    {
+      "label": "button",
+      "background": "#000000",
+      "color": "#1A1A1A",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(26, 26, 26)",
+      "boxShadow": "none",
+      "fontSize": "20.8px",
+      "fontWeight": "300",
+      "height": "147px"
+    }
+  ],
+  "cards": [
+    {
+      "label": "card",
+      "background": "#000000",
+      "color": "#FFFFFF",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(255, 255, 255)",
+      "boxShadow": "none",
+      "fontSize": "20.8px",
+      "fontWeight": "300",
+      "height": "600px"
+    },
+    {
+      "label": "card",
+      "background": "#000000",
+      "color": "#1A1A1A",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(26, 26, 26)",
+      "boxShadow": "none",
+      "fontSize": "20.8px",
+      "fontWeight": "300",
+      "height": "501.094px"
+    },
+    {
+      "label": "card",
+      "background": "#FFFFFF",
+      "color": "#1A1A1A",
+      "padding": "0px",
+      "borderRadius": "8px",
+      "border": "0px none rgb(26, 26, 26)",
+      "boxShadow": "rgba(0, 0, 0, 0.15) 0px 0px 15.8px 0px",
+      "fontSize": "20.8px",
+      "fontWeight": "300",
+      "height": "147px"
+    },
+    {
+      "label": "card",
+      "background": "#000000",
+      "color": "#1A1A1A",
+      "padding": "0px",
+      "borderRadius": "8px 0px 0px 8px",
+      "border": "",
+      "boxShadow": "none",
+      "fontSize": "20.8px",
+      "fontWeight": "300",
+      "height": "147px"
+    }
+  ],
+  "nav": null
+}
