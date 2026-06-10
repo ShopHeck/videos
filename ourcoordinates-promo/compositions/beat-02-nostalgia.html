@@ -1,0 +1,96 @@
+<template id="beat-02-nostalgia-template">
+  <div data-composition-id="beat-02-nostalgia" data-width="1080" data-height="1920" style="position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0a0a;">
+
+    <!-- Background image with Ken Burns -->
+    <div class="bg-wrap" style="position:absolute;inset:-60px;overflow:hidden;">
+      <img class="bg-img" src="capture/assets/personalized-jewelry-for-wanderers.jpg"
+        style="width:100%;height:100%;object-fit:cover;filter:saturate(0.7) brightness(0.85);" />
+    </div>
+
+    <!-- Warm overlay tint -->
+    <div class="warm-tint" style="position:absolute;inset:0;background:rgba(212,175,55,0.06);"></div>
+
+    <!-- Dark vignette for readability -->
+    <div class="vignette" style="position:absolute;inset:0;background:radial-gradient(ellipse at center, transparent 25%, rgba(10,10,10,0.65) 100%);"></div>
+
+    <!-- Gold light leak from top-right -->
+    <div class="light-leak" style="position:absolute;top:-100px;right:-100px;width:600px;height:600px;border-radius:50%;background:radial-gradient(ellipse at center, rgba(212,175,55,0.18) 0%, transparent 70%);opacity:0.5;"></div>
+
+    <!-- Content layer -->
+    <div class="content" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:120px 80px;gap:28px;">
+      <div class="headline" style="font-family:'Playfair Display',serif;font-weight:700;font-style:italic;font-size:54px;color:#f5f0e8;text-align:center;line-height:1.2;letter-spacing:-0.02em;text-shadow:0 2px 30px rgba(0,0,0,0.5);">Remember that place?</div>
+      <div class="coords-whisper" style="font-family:'RM Neue',serif;font-weight:300;font-style:italic;font-size:18px;letter-spacing:0.06em;color:#bfa265;opacity:0.7;text-shadow:0 0 15px rgba(212,175,55,0.3);">
+        <span class="wc">3</span><span class="wc">4</span><span class="wc">.</span><span class="wc">0</span><span class="wc">1</span><span class="wc">9</span><span class="wc">5</span><span class="wc">&deg;</span><span class="wc"> </span><span class="wc">N</span><span class="wc">,</span><span class="wc"> </span><span class="wc">1</span><span class="wc">1</span><span class="wc">8</span><span class="wc">.</span><span class="wc">4</span><span class="wc">9</span><span class="wc">1</span><span class="wc">2</span><span class="wc">&deg;</span><span class="wc"> </span><span class="wc">W</span>
+      </div>
+    </div>
+
+    <style>
+      #beat-02-nostalgia-template .wc {
+        display: inline-block;
+        opacity: 0;
+      }
+      @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+      @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+      @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf') format('truetype'); font-weight: 300; font-style: normal; }
+      @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+      @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+      @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; }
+      @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-SemiBoldItalic.woff2') format('woff2'); font-weight: 600; font-style: italic; }
+      @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-BoldItalic.woff2') format('woff2'); font-weight: 700; font-style: italic; }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      var BEAT = 5.3;
+      var tl = gsap.timeline({ paused: true });
+
+      // Ken Burns slow zoom on background
+      tl.fromTo(".bg-img",
+        { scale: 1.0 },
+        { scale: 1.15, duration: BEAT, ease: "none" },
+        0
+      );
+
+      // Background wrapper entrance (fade in)
+      tl.fromTo(".bg-wrap",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.8, ease: "power2.out" },
+        0.1
+      );
+
+      // Light leak pulse
+      tl.fromTo(".light-leak",
+        { opacity: 0.4, x: 0 },
+        { opacity: 0.9, x: -20, duration: BEAT, ease: "sine.inOut" },
+        0
+      );
+
+      // Headline entrance
+      tl.fromTo(".headline",
+        { opacity: 0, y: 35 },
+        { opacity: 1, y: 0, duration: 1.0, ease: "power3.out" },
+        0.6
+      );
+
+      // Headline subtle float
+      tl.fromTo(".headline",
+        { y: 0 },
+        { y: -4, duration: 3.5, ease: "sine.inOut", yoyo: true, repeat: 0 },
+        1.6
+      );
+
+      // Coordinates whisper stagger
+      var wChars = document.querySelectorAll("[data-composition-id='beat-02-nostalgia'] .wc");
+      wChars.forEach(function(ch, i) {
+        tl.fromTo(ch,
+          { opacity: 0, y: 8 },
+          { opacity: 0.7, y: 0, duration: 0.1, ease: "power2.out" },
+          1.8 + (i * 0.04)
+        );
+      });
+
+      window.__timelines["beat-02-nostalgia"] = tl;
+    </script>
+  </div>
+</template>

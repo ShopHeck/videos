@@ -1,0 +1,55 @@
+{
+  "summary": {
+    "webAnimations": 1,
+    "cssDeclarations": 391,
+    "scrollTargets": 46,
+    "cdpAnimations": 23,
+    "canvases": 0
+  },
+  "namedAnimations": [
+    "cartEmptyOpening",
+    "klaviyo-fadein"
+  ],
+  "scrollTriggeredElements": 46,
+  "representativeAnimations": [
+    {
+      "type": "CSSAnimation",
+      "playState": "finished",
+      "animationName": "klaviyo-fadein",
+      "targetSelector": "div.needsclick.kl-private-reset-css-Xuajs1",
+      "targetRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "top": 0,
+        "right": 1920,
+        "bottom": 1080,
+        "left": 0
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "ease",
+          "composite": "auto",
+          "opacity": "0",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "ease",
+          "composite": "auto",
+          "opacity": "1",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 350,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    }
+  ]
+}

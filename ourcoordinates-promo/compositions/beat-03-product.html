@@ -1,0 +1,123 @@
+<template id="beat-03-product-template">
+  <div data-composition-id="beat-03-product" data-width="1080" data-height="1920" style="position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0a0a;">
+
+    <!-- Subtle vertical gradient background -->
+    <div class="bg-gradient" style="position:absolute;inset:0;background:linear-gradient(to top, #0a0a0a 0%, #1a1a1a 100%);"></div>
+
+    <!-- Radial glow behind products -->
+    <div class="product-glow" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;border-radius:50%;background:radial-gradient(ellipse at center, rgba(212,175,55,0.1) 0%, transparent 60%);"></div>
+
+    <!-- Product Image A (primary - bracelet) -->
+    <div class="product-a-wrap" style="position:absolute;top:280px;left:50%;transform:translateX(-50%);width:860px;height:860px;overflow:hidden;border-radius:4px;">
+      <img class="product-a" src="capture/assets/hero-12.jpg"
+        style="width:100%;height:100%;object-fit:cover;" />
+    </div>
+
+    <!-- Product Image B (necklace - fades in later) -->
+    <div class="product-b-wrap" style="position:absolute;top:280px;left:50%;transform:translateX(-50%);width:860px;height:860px;overflow:hidden;border-radius:4px;opacity:0;">
+      <img class="product-b" src="capture/assets/hero-14.jpg"
+        style="width:100%;height:100%;object-fit:cover;" />
+    </div>
+
+    <!-- Gold accent frame -->
+    <div class="gold-frame" style="position:absolute;top:60px;left:60px;right:60px;bottom:60px;border:1px solid rgba(212,175,55,0.35);border-radius:2px;"></div>
+
+    <!-- Product label - Bracelet -->
+    <div class="label-bracelet" style="position:absolute;bottom:160px;left:50%;transform:translateX(-50%);font-family:'Inter',sans-serif;font-weight:400;font-size:16px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.8);text-align:center;">Coordinates Bracelet</div>
+
+    <!-- Product label - Necklace (appears with product B) -->
+    <div class="label-necklace" style="position:absolute;bottom:160px;left:50%;transform:translateX(-50%);font-family:'Inter',sans-serif;font-weight:400;font-size:16px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.8);text-align:center;opacity:0;">Coordinates Necklace</div>
+
+    <!-- Section title -->
+    <div class="section-title" style="position:absolute;top:180px;left:50%;transform:translateX(-50%);font-family:'Playfair Display',serif;font-weight:400;font-style:italic;font-size:38px;color:#f5f0e8;text-align:center;letter-spacing:-0.02em;white-space:nowrap;">Coordinates Bracelets &amp; Necklaces</div>
+
+    <style>
+      @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+      @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+      @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf') format('truetype'); font-weight: 300; font-style: normal; }
+      @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+      @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+      @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; }
+      @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-SemiBoldItalic.woff2') format('woff2'); font-weight: 600; font-style: italic; }
+      @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-BoldItalic.woff2') format('woff2'); font-weight: 700; font-style: italic; }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      var BEAT = 5.5;
+      var tl = gsap.timeline({ paused: true });
+
+      // Product glow pulse
+      tl.fromTo(".product-glow",
+        { scale: 0.8, opacity: 0 },
+        { scale: 1.1, opacity: 1, duration: BEAT, ease: "sine.inOut" },
+        0
+      );
+
+      // Product A entrance with Ken Burns
+      tl.fromTo(".product-a-wrap",
+        { opacity: 0, scale: 0.95 },
+        { opacity: 1, scale: 1.0, duration: 0.9, ease: "power2.out" },
+        0.2
+      );
+      tl.fromTo(".product-a",
+        { scale: 1.0 },
+        { scale: 1.08, duration: BEAT, ease: "none" },
+        0
+      );
+
+      // Section title entrance
+      tl.fromTo(".section-title",
+        { opacity: 0, y: -20 },
+        { opacity: 1, y: 0, duration: 0.7, ease: "expo.out" },
+        0.3
+      );
+
+      // Gold frame entrance (clip-path reveal)
+      tl.fromTo(".gold-frame",
+        { opacity: 0, scale: 1.05 },
+        { opacity: 1, scale: 1.0, duration: 1.2, ease: "power3.inOut" },
+        0.5
+      );
+
+      // Bracelet label entrance
+      tl.fromTo(".label-bracelet",
+        { opacity: 0, y: 15 },
+        { opacity: 0.8, y: 0, duration: 0.6, ease: "power2.out" },
+        0.8
+      );
+
+      // Crossfade to Product B (necklace) at midpoint
+      tl.fromTo(".product-a-wrap",
+        { opacity: 1 },
+        { opacity: 0, duration: 0.8, ease: "power1.inOut" },
+        2.5
+      );
+      tl.fromTo(".product-b-wrap",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.8, ease: "power1.inOut" },
+        2.5
+      );
+      tl.fromTo(".product-b",
+        { scale: 1.0 },
+        { scale: 1.06, duration: 3.0, ease: "none" },
+        2.5
+      );
+
+      // Label swap
+      tl.fromTo(".label-bracelet",
+        { opacity: 0.8 },
+        { opacity: 0, duration: 0.4, ease: "power1.in" },
+        2.4
+      );
+      tl.fromTo(".label-necklace",
+        { opacity: 0, y: 10 },
+        { opacity: 0.8, y: 0, duration: 0.5, ease: "power2.out" },
+        3.0
+      );
+
+      window.__timelines["beat-03-product"] = tl;
+    </script>
+  </div>
+</template>

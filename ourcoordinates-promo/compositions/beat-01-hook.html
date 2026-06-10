@@ -1,0 +1,86 @@
+<template id="beat-01-hook-template">
+  <div data-composition-id="beat-01-hook" data-width="1080" data-height="1920" style="position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0a0a;">
+
+    <!-- Radial gold glow background -->
+    <div class="glow-bg" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+      <div class="glow-orb" style="width:600px;height:600px;border-radius:50%;background:radial-gradient(ellipse at center, rgba(212,175,55,0.1) 0%, rgba(212,175,55,0.04) 40%, transparent 70%);"></div>
+    </div>
+
+    <!-- Depth particles -->
+    <div class="particle p1" style="position:absolute;top:30%;left:20%;width:3px;height:3px;border-radius:50%;background:#d4af37;opacity:0.3;"></div>
+    <div class="particle p2" style="position:absolute;top:55%;left:75%;width:2px;height:2px;border-radius:50%;background:#d4af37;opacity:0.25;"></div>
+    <div class="particle p3" style="position:absolute;top:70%;left:35%;width:4px;height:4px;border-radius:50%;background:#d4af37;opacity:0.2;"></div>
+    <div class="particle p4" style="position:absolute;top:20%;left:60%;width:2px;height:2px;border-radius:50%;background:#d4af37;opacity:0.3;"></div>
+    <div class="particle p5" style="position:absolute;top:80%;left:55%;width:3px;height:3px;border-radius:50%;background:#d4af37;opacity:0.2;"></div>
+
+    <!-- Coordinates text -->
+    <div class="coords-container" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;">
+      <div class="coords-text" style="font-family:'RM Neue',serif;font-weight:300;font-style:italic;font-size:28px;letter-spacing:0.04em;color:#bfa265;text-shadow:0 0 20px rgba(212,175,55,0.4);">
+        <span class="char">4</span><span class="char">0</span><span class="char">.</span><span class="char">7</span><span class="char">1</span><span class="char">2</span><span class="char">8</span><span class="char">&deg;</span><span class="char"> </span><span class="char">N</span><span class="char">,</span><span class="char"> </span><span class="char">7</span><span class="char">4</span><span class="char">.</span><span class="char">0</span><span class="char">0</span><span class="char">6</span><span class="char">0</span><span class="char">&deg;</span><span class="char"> </span><span class="char">W</span>
+      </div>
+      <div class="tagline" style="font-family:'Playfair Display',serif;font-weight:400;font-style:italic;font-size:42px;color:#f5f0e8;text-align:center;line-height:1.3;letter-spacing:-0.02em;">Every place tells a story</div>
+    </div>
+
+    <style>
+      #beat-01-hook-template .char {
+        display: inline-block;
+        opacity: 0;
+      }
+      @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+      @font-face { font-family: 'Playfair Display'; src: url('capture/assets/fonts/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+      @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf') format('truetype'); font-weight: 300; font-style: normal; }
+      @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+      @font-face { font-family: 'Inter'; src: url('capture/assets/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+      @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-LightItalic.woff2') format('woff2'); font-weight: 300; font-style: italic; }
+      @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-SemiBoldItalic.woff2') format('woff2'); font-weight: 600; font-style: italic; }
+      @font-face { font-family: 'RM Neue'; src: url('capture/assets/fonts/RMNeue-BoldItalic.woff2') format('woff2'); font-weight: 700; font-style: italic; }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      var BEAT = 3.8;
+      var tl = gsap.timeline({ paused: true });
+
+      // Glow orb expands
+      tl.fromTo(".glow-orb",
+        { scale: 0.6, opacity: 0 },
+        { scale: 1.4, opacity: 1, duration: BEAT, ease: "sine.inOut" },
+        0.1
+      );
+
+      // Particles drift upward at different rates
+      tl.fromTo(".p1", { y: 80 }, { y: -80, duration: BEAT, ease: "none" }, 0);
+      tl.fromTo(".p2", { y: 60 }, { y: -60, duration: BEAT, ease: "none" }, 0.2);
+      tl.fromTo(".p3", { y: 100 }, { y: -100, duration: BEAT, ease: "none" }, 0.1);
+      tl.fromTo(".p4", { y: 40 }, { y: -50, duration: BEAT, ease: "none" }, 0.3);
+      tl.fromTo(".p5", { y: 70 }, { y: -70, duration: BEAT, ease: "none" }, 0.15);
+
+      // Character stagger on coordinates
+      var chars = document.querySelectorAll("[data-composition-id='beat-01-hook'] .char");
+      chars.forEach(function(char, i) {
+        tl.fromTo(char,
+          { opacity: 0, y: 12 },
+          { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" },
+          0.2 + (i * 0.045)
+        );
+      });
+
+      // Tagline entrance
+      tl.fromTo(".tagline",
+        { opacity: 0, y: 24 },
+        { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" },
+        1.6
+      );
+
+      // Subtle scale breath on entire coords container
+      tl.fromTo(".coords-container",
+        { scale: 0.98 },
+        { scale: 1.02, duration: BEAT - 0.2, ease: "sine.inOut" },
+        0.2
+      );
+
+      window.__timelines["beat-01-hook"] = tl;
+    </script>
+  </div>
+</template>
