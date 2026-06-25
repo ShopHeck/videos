@@ -1,0 +1,159 @@
+<template id="beat-3-template">
+  <div data-composition-id="beat-3" data-width="1080" data-height="1920">
+    <style>
+      [data-composition-id="beat-3"] {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        position: relative;
+        background: #0a0a0a;
+        font-family: 'Arial', sans-serif;
+      }
+      .b3-glow {
+        position: absolute;
+        width: 1200px;
+        height: 1200px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, rgba(108, 180, 238, 0.2) 0%, transparent 60%);
+        filter: blur(100px);
+      }
+      .b3-speed-line {
+        position: absolute;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, rgba(108, 180, 238, 0.6), transparent);
+        border-radius: 2px;
+      }
+      .b3-speed-1 { top: 25%; left: -200px; width: 400px; }
+      .b3-speed-2 { top: 40%; right: -200px; width: 350px; }
+      .b3-speed-3 { top: 60%; left: -200px; width: 500px; }
+      .b3-speed-4 { top: 75%; right: -200px; width: 300px; }
+      .b3-speed-5 { top: 35%; left: -200px; width: 250px; height: 3px; }
+      .b3-speed-6 { top: 55%; right: -200px; width: 450px; height: 3px; }
+      .b3-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        padding: 0 60px;
+        box-sizing: border-box;
+      }
+      .b3-headline {
+        font-size: 110px;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1.1;
+        letter-spacing: -3px;
+        text-transform: uppercase;
+      }
+      .b3-accent {
+        color: #6CB4EE;
+        text-shadow: 0 0 50px rgba(108, 180, 238, 0.5);
+      }
+      .b3-timer {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 4px solid rgba(108, 180, 238, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 30px rgba(108, 180, 238, 0.2);
+      }
+      .b3-timer-hand {
+        width: 3px;
+        height: 50px;
+        background: #6CB4EE;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform-origin: bottom center;
+        border-radius: 2px;
+      }
+      .b3-timer-dot {
+        width: 12px;
+        height: 12px;
+        background: #6CB4EE;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(108, 180, 238, 0.8);
+      }
+      .b3-scanlines {
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 3px,
+          rgba(108, 180, 238, 0.015) 3px,
+          rgba(108, 180, 238, 0.015) 4px
+        );
+        pointer-events: none;
+      }
+    </style>
+
+    <div class="b3-glow"></div>
+    <div class="b3-scanlines"></div>
+    <div class="b3-speed-line b3-speed-1"></div>
+    <div class="b3-speed-line b3-speed-2"></div>
+    <div class="b3-speed-line b3-speed-3"></div>
+    <div class="b3-speed-line b3-speed-4"></div>
+    <div class="b3-speed-line b3-speed-5"></div>
+    <div class="b3-speed-line b3-speed-6"></div>
+    <div class="b3-timer">
+      <div class="b3-timer-hand"></div>
+      <div class="b3-timer-dot"></div>
+    </div>
+    <div class="b3-content">
+      <div class="b3-headline">GET BACK<br>IN THE GYM<br><span class="b3-accent">FASTER<br>THAN EVER</span></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Timer spins in
+      tl.fromTo('.b3-timer',
+        { scale: 0, opacity: 0, rotation: -180 },
+        { scale: 1, opacity: 1, rotation: 0, duration: 0.5, ease: 'back.out(1.6)' }, 0.1);
+
+      // Timer hand spins
+      tl.fromTo('.b3-timer-hand',
+        { rotation: 0 },
+        { rotation: 720, duration: 2.5, ease: 'power2.out' }, 0.2);
+
+      // Headline punches in
+      tl.fromTo('.b3-headline',
+        { scale: 3.5, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.55, ease: 'expo.out' }, 0.15);
+
+      // Speed lines shoot across
+      tl.fromTo('.b3-speed-1', { x: 0 }, { x: 1400, duration: 0.8, ease: 'power2.out' }, 0.2);
+      tl.fromTo('.b3-speed-2', { x: 0 }, { x: -1400, duration: 0.7, ease: 'power2.out' }, 0.3);
+      tl.fromTo('.b3-speed-3', { x: 0 }, { x: 1500, duration: 0.9, ease: 'power2.out' }, 0.25);
+      tl.fromTo('.b3-speed-4', { x: 0 }, { x: -1300, duration: 0.75, ease: 'power2.out' }, 0.35);
+      tl.fromTo('.b3-speed-5', { x: 0 }, { x: 1300, duration: 0.85, ease: 'power2.out' }, 0.4);
+      tl.fromTo('.b3-speed-6', { x: 0 }, { x: -1500, duration: 0.8, ease: 'power2.out' }, 0.3);
+
+      // Glow expands
+      tl.fromTo('.b3-glow',
+        { scale: 0.3, opacity: 0 },
+        { scale: 1.4, opacity: 1, duration: 1.8, ease: 'sine.out' }, 0);
+
+      // Zoom push
+      tl.fromTo('.b3-content',
+        { scale: 1.0 },
+        { scale: 1.06, duration: 3.0, ease: 'none' }, 0.1);
+
+      window.__timelines['beat-3'] = tl;
+    </script>
+  </div>
+</template>
