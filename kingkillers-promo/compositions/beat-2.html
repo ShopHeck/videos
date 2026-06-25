@@ -2,46 +2,125 @@
   <div data-composition-id="beat-2" data-width="1080" data-height="1920">
     <style>
       [data-composition-id="beat-2"] {
-        width: 1080px; height: 1920px; overflow: hidden; position: relative; background: #0a0a0a; font-family: 'Inter', sans-serif;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        position: relative;
+        background: #0a0a0a;
+        font-family: 'Arial', sans-serif;
       }
-      .b2-glow { position: absolute; width: 800px; height: 800px; border-radius: 50%; top: 40%; left: 50%; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(255, 0, 0, 0.15) 0%, transparent 70%); filter: blur(70px); }
-      .b2-content { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 200px 60px; gap: 50px; box-sizing: border-box; }
-      .b2-heading { font-size: 64px; font-weight: 800; color: #ffffff; text-align: center; text-transform: uppercase; letter-spacing: -1px; line-height: 1.2; }
-      .b2-heading-accent { color: #ff0000; }
-      .b2-cards { display: flex; flex-direction: column; gap: 20px; width: 100%; max-width: 700px; }
-      .b2-card { display: flex; align-items: center; gap: 20px; padding: 28px 36px; border-radius: 14px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 0, 0, 0.12); }
-      .b2-card-icon { font-size: 36px; flex-shrink: 0; }
-      .b2-card-title { font-size: 32px; font-weight: 700; color: #ffffff; }
-      .b2-card-desc { font-size: 20px; font-weight: 400; color: #777777; margin-top: 2px; }
+      .b2-glow {
+        position: absolute;
+        width: 900px;
+        height: 900px;
+        border-radius: 50%;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, rgba(220, 38, 38, 0.2) 0%, transparent 70%);
+        filter: blur(80px);
+      }
+      .b2-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 200px 60px;
+        gap: 50px;
+        box-sizing: border-box;
+      }
+      .b2-tagline {
+        font-size: 52px;
+        font-weight: 700;
+        color: #DC2626;
+        text-align: center;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+      }
+      .b2-category {
+        font-size: 100px;
+        font-weight: 900;
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        line-height: 1.3;
+        border-left: 8px solid #DC2626;
+        padding-left: 30px;
+      }
+      .b2-divider {
+        width: 200px;
+        height: 4px;
+        background: #DC2626;
+      }
+      .b2-subtitle {
+        font-size: 44px;
+        font-weight: 600;
+        color: #888888;
+        text-align: center;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+      }
+      .b2-grain {
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 2px,
+          rgba(255, 255, 255, 0.01) 2px,
+          rgba(255, 255, 255, 0.01) 3px
+        );
+        pointer-events: none;
+      }
     </style>
+
     <div class="b2-glow"></div>
+    <div class="b2-grain"></div>
     <div class="b2-content">
-      <div class="b2-heading">Train Hard.<br><span class="b2-heading-accent">Look Killer.</span></div>
-      <div class="b2-cards">
-        <div class="b2-card b2-card-1">
-          <div class="b2-card-icon">&#x1F94A;</div>
-          <div><div class="b2-card-title">Sleeveless Hoodies</div><div class="b2-card-desc">Drop armhole, athletic cut</div></div>
-        </div>
-        <div class="b2-card b2-card-2">
-          <div class="b2-card-icon">&#x1F525;</div>
-          <div><div class="b2-card-title">Fight Tees & Tanks</div><div class="b2-card-desc">Boxing, MMA, Muay Thai</div></div>
-        </div>
-        <div class="b2-card b2-card-3">
-          <div class="b2-card-icon">&#x1F3CB;</div>
-          <div><div class="b2-card-title">Gym Shorts & Joggers</div><div class="b2-card-desc">Athletic mesh, 2-in-1 styles</div></div>
-        </div>
-      </div>
+      <div class="b2-tagline">Combat Sports Apparel</div>
+      <div class="b2-category">RASHGUARDS<br>SHORTS<br>HOODIES</div>
+      <div class="b2-divider"></div>
+      <div class="b2-subtitle">Inspired By The Fight</div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <script>
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
-      tl.fromTo('.b2-heading', { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'power3.out' }, 0.1);
-      tl.fromTo('.b2-card-1', { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, ease: 'power3.out' }, 0.35);
-      tl.fromTo('.b2-card-2', { x: 60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, ease: 'power3.out' }, 0.55);
-      tl.fromTo('.b2-card-3', { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, ease: 'power3.out' }, 0.75);
-      tl.fromTo('.b2-glow', { scale: 0.6, opacity: 0 }, { scale: 1.1, opacity: 1, duration: 1.2, ease: 'sine.out' }, 0);
-      tl.fromTo('.b2-content', { y: 15 }, { y: -10, duration: 2.4, ease: 'none' }, 0);
+
+      // Tagline drops in
+      tl.fromTo('.b2-tagline',
+        { y: -60, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.4, ease: 'power3.out' }, 0.1);
+
+      // Categories slam in with stagger
+      tl.fromTo('.b2-category',
+        { x: -200, opacity: 0, scale: 1.3 },
+        { x: 0, opacity: 1, scale: 1, duration: 0.5, ease: 'expo.out' }, 0.3);
+
+      // Red divider expands
+      tl.fromTo('.b2-divider',
+        { scaleX: 0 },
+        { scaleX: 1, duration: 0.4, ease: 'expo.out' }, 0.6);
+
+      // Subtitle fades in
+      tl.fromTo('.b2-subtitle',
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.35, ease: 'power2.out' }, 0.8);
+
+      // Glow builds
+      tl.fromTo('.b2-glow',
+        { scale: 0.5, opacity: 0 },
+        { scale: 1.2, opacity: 1, duration: 1.4, ease: 'sine.out' }, 0);
+
+      // Slow zoom on content
+      tl.fromTo('.b2-content',
+        { scale: 1.0 },
+        { scale: 1.04, duration: 3.0, ease: 'none' }, 0);
+
       window.__timelines['beat-2'] = tl;
     </script>
   </div>

@@ -2,47 +2,130 @@
   <div data-composition-id="beat-3" data-width="1080" data-height="1920">
     <style>
       [data-composition-id="beat-3"] {
-        width: 1080px; height: 1920px; overflow: hidden; position: relative; background: #0a0a0a; font-family: 'Inter', sans-serif;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        position: relative;
+        background: #0a0a0a;
+        font-family: 'Arial', sans-serif;
       }
-      .b3-glow { position: absolute; width: 900px; height: 900px; border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(255, 0, 0, 0.1) 0%, transparent 70%); filter: blur(60px); }
-      .b3-content { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 200px 60px; gap: 60px; box-sizing: border-box; }
-      .b3-badge { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
-      .b3-badge-icon { font-size: 64px; }
-      .b3-badge-title { font-size: 40px; font-weight: 800; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; }
-      .b3-badge-desc { font-size: 24px; font-weight: 400; color: #777777; }
-      .b3-divider { width: 100px; height: 2px; background: rgba(255, 0, 0, 0.25); }
+      .b3-glow {
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, rgba(245, 166, 35, 0.25) 0%, transparent 70%);
+        filter: blur(80px);
+      }
+      .b3-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 200px 60px;
+        gap: 40px;
+        box-sizing: border-box;
+      }
+      .b3-stars {
+        font-size: 80px;
+        color: #F5A623;
+        letter-spacing: 10px;
+      }
+      .b3-headline {
+        font-size: 120px;
+        font-weight: 900;
+        color: #ffffff;
+        text-align: center;
+        letter-spacing: -3px;
+        text-transform: uppercase;
+        line-height: 1.1;
+      }
+      .b3-count {
+        color: #F5A623;
+      }
+      .b3-quote {
+        font-size: 44px;
+        font-weight: 400;
+        color: #cccccc;
+        text-align: center;
+        font-style: italic;
+        line-height: 1.4;
+        padding: 0 40px;
+        border-left: 6px solid #F5A623;
+        padding-left: 30px;
+        text-align: left;
+      }
+      .b3-author {
+        font-size: 32px;
+        font-weight: 600;
+        color: #888888;
+        text-align: center;
+        letter-spacing: 2px;
+      }
+      .b3-verified {
+        font-size: 28px;
+        font-weight: 500;
+        color: #F5A623;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
     </style>
+
     <div class="b3-glow"></div>
     <div class="b3-content">
-      <div class="b3-badge b3-badge-1">
-        <div class="b3-badge-icon">&#x1F69A;</div>
-        <div class="b3-badge-title">Free USA Shipping</div>
-        <div class="b3-badge-desc">On orders $100+</div>
-      </div>
-      <div class="b3-divider"></div>
-      <div class="b3-badge b3-badge-2">
-        <div class="b3-badge-icon">&#x1F6E1;</div>
-        <div class="b3-badge-title">30-Day Returns</div>
-        <div class="b3-badge-desc">Risk-free guarantee</div>
-      </div>
-      <div class="b3-divider"></div>
-      <div class="b3-badge b3-badge-3">
-        <div class="b3-badge-icon">&#x2B50;</div>
-        <div class="b3-badge-title">50+ Verified Reviews</div>
-        <div class="b3-badge-desc">96% satisfaction rate</div>
-      </div>
+      <div class="b3-stars"></div>
+      <div class="b3-headline"><span class="b3-count">84+</span> FIVE STAR REVIEWS</div>
+      <div class="b3-quote">"Game changer - keeps up with my performance in the gym and on the mat"</div>
+      <div class="b3-author">- Verified Buyer</div>
+      <div class="b3-verified">Trusted By Athletes</div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <script>
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
-      tl.fromTo('.b3-badge-1', { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'back.out(1.5)' }, 0.1);
-      tl.fromTo('.b3-content > .b3-divider:nth-child(2)', { scaleX: 0 }, { scaleX: 1, duration: 0.25, ease: 'power2.out' }, 0.35);
-      tl.fromTo('.b3-badge-2', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'back.out(1.5)' }, 0.45);
-      tl.fromTo('.b3-content > .b3-divider:nth-child(4)', { scaleX: 0 }, { scaleX: 1, duration: 0.25, ease: 'power2.out' }, 0.7);
-      tl.fromTo('.b3-badge-3', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'back.out(1.5)' }, 0.8);
-      tl.fromTo('.b3-glow', { scale: 0.7, opacity: 0 }, { scale: 1.1, opacity: 1, duration: 1.4, ease: 'sine.out' }, 0);
-      tl.fromTo('.b3-content', { scale: 0.97 }, { scale: 1.03, duration: 2.4, ease: 'none' }, 0);
+
+      // Stars animate in one by one
+      tl.fromTo('.b3-stars',
+        { scale: 0, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.4, ease: 'back.out(2)' }, 0.1);
+
+      // Headline slams in
+      tl.fromTo('.b3-headline',
+        { scale: 3, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.5, ease: 'expo.out' }, 0.2);
+
+      // Quote slides in from left
+      tl.fromTo('.b3-quote',
+        { x: -100, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.4, ease: 'power3.out' }, 0.55);
+
+      // Author fades in
+      tl.fromTo('.b3-author',
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 0.8);
+
+      // Verified badge
+      tl.fromTo('.b3-verified',
+        { opacity: 0, y: 15 },
+        { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 0.95);
+
+      // Gold glow
+      tl.fromTo('.b3-glow',
+        { scale: 0.4, opacity: 0 },
+        { scale: 1.2, opacity: 1, duration: 1.4, ease: 'sine.out' }, 0);
+
+      // Slow zoom
+      tl.fromTo('.b3-content',
+        { scale: 1.0 },
+        { scale: 1.04, duration: 2.8, ease: 'none' }, 0.2);
+
       window.__timelines['beat-3'] = tl;
     </script>
   </div>
