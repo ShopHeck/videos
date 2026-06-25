@@ -78,15 +78,7 @@
         margin-top: 30px;
         letter-spacing: 1px;
       }
-      .b5-logo-area {
-        margin-bottom: 30px;
-      }
-      .b5-logo-text {
-        font-size: 48px;
-        font-weight: 700;
-        color: #6CB4EE;
-        letter-spacing: 3px;
-      }
+
       .b5-scanlines {
         position: absolute;
         inset: 0;
@@ -132,9 +124,6 @@
       <div class="b5-particle b5-p6"></div>
     </div>
     <div class="b5-content">
-      <div class="b5-logo-area">
-        <div class="b5-logo-text">BLUEFITMD</div>
-      </div>
       <div class="b5-brand">Blue<span class="b5-brand-accent">Fit</span>MD</div>
       <div class="b5-tagline">Recovery Science, Delivered</div>
       <div class="b5-cta-button">SHOP NOW</div>
@@ -150,11 +139,6 @@
       tl.fromTo('.b5-brand',
         { scale: 3, opacity: 0 },
         { scale: 1, opacity: 1, duration: 0.5, ease: 'expo.out' }, 0.1);
-
-      // Logo text fades
-      tl.fromTo('.b5-logo-text',
-        { opacity: 0, y: -30 },
-        { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 0.3);
 
       // Tagline
       tl.fromTo('.b5-tagline',
