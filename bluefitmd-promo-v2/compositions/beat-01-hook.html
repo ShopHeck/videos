@@ -1,0 +1,106 @@
+<template id="beat-01-hook-template">
+  <div class="hook-root" data-composition-id="beat-01-hook" data-width="1080" data-height="1920" style="position:relative;width:1080px;height:1920px;overflow:hidden;background:#06101F;">
+
+    <!-- Dark radial base -->
+    <div class="bg-base" style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%, #0c1c33 0%, #06101F 55%, #03080F 100%);"></div>
+
+    <!-- Red danger vignette -->
+    <div class="red-vig" style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 55%, rgba(255,68,56,0.0) 35%, rgba(180,20,15,0.35) 100%);opacity:0;"></div>
+
+    <!-- Full red impact flash -->
+    <div class="red-flash" style="position:absolute;inset:0;background:#FF4438;opacity:0;mix-blend-mode:screen;"></div>
+
+    <!-- Scanline streaks -->
+    <div class="streaks" style="position:absolute;inset:0;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.0) 0px, rgba(255,255,255,0.0) 6px, rgba(120,170,255,0.035) 7px, rgba(120,170,255,0.0) 9px);opacity:0.5;"></div>
+
+    <!-- Pain pulse rings -->
+    <div class="pulse-wrap" style="position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:10px;height:10px;">
+      <div class="ring r1" style="position:absolute;left:50%;top:50%;width:300px;height:300px;margin:-150px 0 0 -150px;border:3px solid rgba(255,68,56,0.55);border-radius:50%;opacity:0;"></div>
+      <div class="ring r2" style="position:absolute;left:50%;top:50%;width:300px;height:300px;margin:-150px 0 0 -150px;border:3px solid rgba(255,68,56,0.45);border-radius:50%;opacity:0;"></div>
+      <div class="ring r3" style="position:absolute;left:50%;top:50%;width:300px;height:300px;margin:-150px 0 0 -150px;border:2px solid rgba(255,120,110,0.4);border-radius:50%;opacity:0;"></div>
+    </div>
+
+    <!-- Shake container holds the type -->
+    <div class="shake" style="position:absolute;inset:0;">
+
+      <!-- ECG line -->
+      <svg class="ecg" width="1080" height="200" viewBox="0 0 1080 200" style="position:absolute;left:0;top:30%;">
+        <polyline class="ecg-line" points="0,100 220,100 260,100 290,40 320,160 350,100 520,100 560,100 590,60 620,140 650,100 760,100 800,100 1080,100"
+          fill="none" stroke="#FF4438" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+          style="filter:drop-shadow(0 0 12px rgba(255,68,56,0.7));"/>
+      </svg>
+
+      <!-- Headline block -->
+      <div class="type" style="position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 70px;text-align:center;">
+        <div class="kicker" style="font-family:'Inter';font-weight:600;font-size:30px;letter-spacing:0.42em;color:#7FB0FF;text-transform:uppercase;opacity:0;">One wrong move</div>
+        <div class="big1" style="font-family:'Anton';font-size:172px;line-height:0.92;color:#ffffff;letter-spacing:0.005em;text-transform:uppercase;opacity:0;text-shadow:0 6px 40px rgba(0,0,0,0.6);">And you're</div>
+        <div class="big2" style="font-family:'Anton';font-size:200px;line-height:0.9;color:#FF4438;letter-spacing:0.01em;text-transform:uppercase;opacity:0;text-shadow:0 0 50px rgba(255,68,56,0.5);">Benched.</div>
+      </div>
+
+      <!-- Sub -->
+      <div class="sub" style="position:absolute;left:0;right:0;bottom:300px;text-align:center;font-family:'Inter';font-weight:500;font-size:36px;letter-spacing:0.02em;color:#C9DCF7;opacity:0;">Every athlete's worst nightmare.</div>
+    </div>
+
+    <style>
+      #beat-01-hook-template .hook-root { will-change: opacity; }
+      @font-face { font-family:'Anton'; src:url('capture/assets/fonts/anton-latin-400-normal.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:block; }
+      @font-face { font-family:'Inter'; src:url('capture/assets/fonts/inter-latin-500-normal.woff2') format('woff2'); font-weight:500; font-style:normal; font-display:block; }
+      @font-face { font-family:'Inter'; src:url('capture/assets/fonts/inter-latin-600-normal.woff2') format('woff2'); font-weight:600; font-style:normal; font-display:block; }
+    </style>
+
+    <script src="vendor/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      var BEAT = 3.4;
+      var scope = "[data-composition-id='beat-01-hook'] ";
+      var q = function(s){ return document.querySelector(scope + s); };
+      var tl = gsap.timeline({ paused: true });
+
+      // scene fade in / out (crossfade handles)
+      tl.fromTo(scope + ".hook-root", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power1.out" }, 0);
+      tl.to(scope + ".hook-root", { opacity: 0, duration: 0.4, ease: "power2.in" }, BEAT - 0.4);
+
+      // kicker
+      tl.fromTo(scope + ".kicker", { opacity: 0, letterSpacing: "0.7em" }, { opacity: 1, letterSpacing: "0.42em", duration: 0.5, ease: "power2.out" }, 0.1);
+
+      // ECG draws in
+      var ecg = q(".ecg-line");
+      var len = ecg.getTotalLength ? ecg.getTotalLength() : 1400;
+      gsap.set(ecg, { strokeDasharray: len, strokeDashoffset: len });
+      tl.to(ecg, { strokeDashoffset: 0, duration: 1.0, ease: "power1.inOut" }, 0.15);
+      // ECG flatlines (drops to flat) then fades
+      tl.to(scope + ".ecg", { opacity: 0.0, y: 10, duration: 0.5, ease: "power2.in" }, 1.5);
+
+      // BIG line 1 slam
+      tl.fromTo(scope + ".big1", { opacity: 0, scale: 1.35, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.32, ease: "power3.out" }, 0.55);
+
+      // BIG line 2 slam (the punch) + red flash + rings + shake
+      tl.fromTo(scope + ".big2", { opacity: 0, scale: 1.5, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.34, ease: "back.out(1.7)" }, 1.0);
+      tl.fromTo(scope + ".red-flash", { opacity: 0 }, { opacity: 0.55, duration: 0.08, ease: "power2.out" }, 1.0);
+      tl.to(scope + ".red-flash", { opacity: 0, duration: 0.4, ease: "power2.in" }, 1.08);
+      tl.fromTo(scope + ".red-vig", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.out" }, 1.0);
+
+      // camera shake on the punch
+      var shakeT = [{x:-16,y:8},{x:14,y:-10},{x:-9,y:-6},{x:7,y:9},{x:-4,y:-3},{x:0,y:0}];
+      shakeT.forEach(function(p, i){
+        tl.to(scope + ".shake", { x: p.x, y: p.y, duration: 0.05, ease: "none" }, 1.0 + i*0.05);
+      });
+
+      // pain pulse rings expand
+      [".r1",".r2",".r3"].forEach(function(sel, i){
+        tl.fromTo(scope + sel,
+          { opacity: 0.7, scale: 0.2 },
+          { opacity: 0, scale: 2.4, duration: 1.3, ease: "power2.out" },
+          1.0 + i*0.22);
+      });
+
+      // sub line
+      tl.fromTo(scope + ".sub", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 1.7);
+
+      // slow continuous push-in on type for life
+      tl.fromTo(scope + ".type", { scale: 1.0 }, { scale: 1.05, duration: BEAT, ease: "sine.inOut" }, 0.0);
+
+      window.__timelines["beat-01-hook"] = tl;
+    </script>
+  </div>
+</template>

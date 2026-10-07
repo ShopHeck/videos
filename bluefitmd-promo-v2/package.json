@@ -1,0 +1,14 @@
+{
+  "name": "bluefitmd-promo-v2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.88 preview",
+    "check": "npx --yes hyperframes@0.6.88 lint && npx --yes hyperframes@0.6.88 validate && npx --yes hyperframes@0.6.88 inspect",
+    "render": "npx --yes hyperframes@0.6.88 render",
+    "publish": "npx --yes hyperframes@0.6.88 publish"
+  },
+  "dependencies": {
+    "hyperframes": "^0.6.88"
+  }
+}
